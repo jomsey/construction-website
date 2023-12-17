@@ -27,7 +27,7 @@ export default function Home() {
 
 
       <section className="w-full bg-gray-700  p-8 flex gap-10 justify-between px-14  flex-col lg:px-24">
-       <p className="text-gray-400 text-sm md:w-1/2 leading-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dolore error at commodi cupiditate, exercitationem, ullam accusantium quod ducimus ea dolorem. Voluptates consequatur magni unde?</p>
+       <p className="text-gray-400 text-base md:w-1/2 leading-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dolore error at commodi cupiditate, exercitationem, ullam accusantium quod ducimus ea dolorem. Voluptates consequatur magni unde?</p>
        <div className="text-white flex gap-12 ">
           <Facebook/>
           <Twitter/>
@@ -38,24 +38,24 @@ export default function Home() {
       <section className="lg:flex md:mx-16 lg:gap-8 lg:px-24">
          <div className="px-12 pb-14 md:px-0">
               <h2 className="text-2xl font-bold mt-14 mb-10 text-slate-700">We Are Leaders In Construction</h2>
-              <p className="text-gray-600 text-sm lg:w-3/4 leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
+              <p className="text-gray-600 text-base lg:w-3/4 leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
              
               <div className="mt-6 flex flex-col gap-6 justify-evenly">
                     <div className="flex gap-6 items-center" >
                         <Check className="text-amber-400 font-extrabold"/>
-                        <span className="font-semibold text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque!</span>
+                        <span className="font-semibold text-base text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque!</span>
                     </div>
                     <div className="flex gap-6 items-center" >
                         <Check className="text-amber-400 font-extrabold"/>
-                        <span className="font-semibold text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque!</span>
+                        <span className="font-semibold text-base text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque!</span>
                     </div>
                     <div className="flex gap-6 items-center" >
                         <Check className="text-amber-400 font-extrabold"/>
-                        <span className="font-semibold text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque!</span>
+                        <span className="font-semibold text-base text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque!</span>
                     </div>
                     <div className="flex gap-6 items-center" >
                         <Check className="text-amber-400 font-extrabold"/>
-                        <span className="font-semibold text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque!</span>
+                        <span className="font-semibold text-base text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque!</span>
                     </div>
               </div>
 
@@ -85,7 +85,7 @@ export default function Home() {
       <section className="w-full bg-gray-700 px-12 sm:px-16 py-14 lg:flex  lg:px-24">
          <div className="lg:w-1/2">
               <h2 className="text-2xl font-bold  mb-10 text-white">Providing Solutions For Construction</h2>
-              <p className="text-gray-400 text-sm lg:w-3/4 leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
+              <p className="text-gray-400 text-base lg:w-3/4 leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
               <div className="mt-8 w-60  grid grid-cols-2 gap-8">
                     <div className="flex   flex-col">
                         <span className="text-white font-bold text-3xl">46+</span>
@@ -112,7 +112,7 @@ export default function Home() {
                </div>
                <div>
                    <h3 className="text-gray-700 font-semibold mb-3">Lorem ipsum dolor sit amet.</h3>
-                   <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                   <p className="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                </div>
            </div>
            <div className="flex gap-6 border-b pb-6 h-auto sm:h-24 flex-col sm:flex-row mt-4">
@@ -121,7 +121,7 @@ export default function Home() {
                </div>
                <div>
                    <h3 className="text-gray-700 font-semibold mb-3">Lorem ipsum dolor sit amet.</h3>
-                   <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                   <p className="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                </div>
            </div>
            <div className="flex gap-6 border-b pb-6 h-auto sm:h-24 flex-col sm:flex-row mt-4">
@@ -130,7 +130,7 @@ export default function Home() {
                </div>
                <div>
                    <h3 className="text-gray-700 font-semibold mb-3">Lorem ipsum dolor sit amet.</h3>
-                   <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                   <p className="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                </div>
            </div>
 
@@ -141,9 +141,9 @@ export default function Home() {
 
       <section className="px-12 py-14 sm:p-14 lg:px-24">
            <div className="flex flex-col items-center"> 
-              <h2 className="text-2xl font-bold  mb-10 text-gray-700">Our Services</h2>
+              <h2 className="text-2xl font-bold  mb-10 text-gray-700" id="services">Our Services</h2>
               <h3 className="text-gray-600 font-bold mb-3">Lorem, ipsum dolor.</h3>
-               <p className="text-sm text-gray-500  leading-8 w-full sm:w-3/4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
+               <p className="text-base text-gray-500  leading-8 w-full sm:w-3/4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5  mt-8 ">
                 <div className=" p-6 shadow-sm hover:shadow-md shadow-gray-400">
@@ -152,7 +152,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-700 font-bold my-3 text-xl">Construction</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
                 <div className="p-6 shadow-sm shadow-gray-400">
@@ -161,7 +161,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-700 font-bold my-3 text-xl">Special Project</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
                 <div className="p-6 shadow-sm shadow-gray-400">
@@ -170,7 +170,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-700 font-bold my-3 text-xl">Consulting</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
                 <div className="p-6 shadow-sm shadow-gray-400">
@@ -179,7 +179,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-700 font-bold my-3 text-xl">Renovation</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
                 <div className="p-6 shadow-sm shadow-gray-400">
@@ -188,7 +188,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-700 font-bold my-3 text-xl">Architecture</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
                 <div className="p-6 shadow-sm shadow-gray-400">
@@ -197,7 +197,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-700 font-bold my-3 text-xl">Interior Design</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-base text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
 
@@ -210,12 +210,12 @@ export default function Home() {
            
             <div className="w-72">
                <h3 className="text-gray-200 font-semibold mb-3">Lorem, ipsum dolor.</h3>
-               <p className="text-sm text-gray-400  leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
+               <p className="text-base text-gray-400  leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
 
             </div>
             <div className="w-72">
                <h3 className="text-gray-200 font-semibold mb-3">Lorem, ipsum dolor.</h3>
-               <p className="text-sm text-gray-400  leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
+               <p className="text-base text-gray-400  leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
 
             </div>
 
@@ -233,15 +233,15 @@ export default function Home() {
             
              <div className="p-12">
                 <h2 className="text-2xl font-bold  mb-10 text-white">Bringing Your Ideas And Innovatios To Life</h2>
-                <p className="text-sm text-gray-400 mb-8 leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
-                <p className="text-sm text-gray-400  leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
+                <p className="text-base text-gray-400 mb-8 leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
+                <p className="text-base text-gray-400  leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
              </div>
               
       </section >
       <section className="py-16">
         <div className="px-12 sm:px-16">
             <h2 className="text-2xl font-bold  mb-10 text-gray-700">Bringing Your Ideas And Innovatios To Life</h2>
-            <p className="text-sm text-gray-600 mb-10 leading-8 lg:w-3/4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
+            <p className="text-base text-gray-600 mb-10 leading-8 lg:w-3/4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
         </div>
         <div className="grid h-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:h-72 gap-2">
               <div>

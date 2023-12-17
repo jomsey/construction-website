@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    max-width: 1600px;
+    min-width: 300px;
+    margin: auto;
+}
+
 .logo {
     width: 120px;
     height: 100px;
@@ -17,12 +23,19 @@ nav {
 
 .hero {
     height: 85vh !important;
+    min-height: 360px;
 }
 
 .blue-bee {
     background-image: url('/d.jpg');
     background-position: center;
     background-size: cover;
+}
+
+.about-us-landing {
+    background-image: url('/d.jpg');
+    height: 60vh !important;
+    min-height: 360px;
 }
 
 .feather-menu,
@@ -39,8 +52,4 @@ nav {
 
 .none {
     display: none;
-}
-
-.bg-primary {
-    @apply bg-amber-400;
 }

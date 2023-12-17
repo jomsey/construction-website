@@ -24,18 +24,18 @@ export default function Nav() {
         <span className='bg-amber-400 logo text-white flex flex-col items-center justify-center text-center z-40'><Triangle/></span>
         <div>
           
-            <div  ref={navList} className="fixed w-0 h-full transition-all ease-linear duration-300  overflow-hidden top-0 left-0 bg-white z-50 pt-0 md:pt-0 md:h-auto md:w-auto md:static   ">
+            <div  ref={navList} className="fixed w-0 h-full transition-all ease-linear duration-300  overflow-hidden top-0 left-0 bg-gray-700 md:bg-white z-50 pt-0 md:pt-0 md:h-auto md:w-auto md:static   ">
 
             <div className='text-amber-400 cursor-pointer m-auto w-min  mt-6 mb-8 md:hidden'  onClick={handleMobileMenuClose}>
               <Delete/>
             </div>
-                <ul className='flex gap-8 mb-6 flex-col md:flex-row  items-center text-2xl md:text-base'>
-                    <li className='text-gray-700 font-semibold hover:text-amber-400'><Link href="/">Home</Link></li>
-                    <li className='text-gray-700 font-semibold hover:text-amber-400'><Link href="/about-us">About</Link></li>
-                    <li className='text-gray-700 font-semibold hover:text-amber-400'><Link href="/projects">Projects</Link></li>
-                    <li className='text-gray-700 font-semibold hover:text-amber-400'><Link href="/contact-us">Contact</Link></li>
-                    <li className='text-gray-700 font-semibold hover:text-amber-400'><Link href="/services">Services</Link></li>
-                    <li className='text-gray-700 font-semibold hover:text-amber-400'><Link href="/">Blog</Link></li>
+                <ul className='flex gap-8 mb-6 flex-col md:flex-row  items-center text-xl md:text-base'>
+                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/">Home</Link></li>
+                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/about-us">About</Link></li>
+                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/projects">Projects</Link></li>
+                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/contact-us">Contact</Link></li>
+                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/#services">Services</Link></li>
+                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/">Blog</Link></li>
                 </ul> 
             </div>
             <div className='text-amber-400 cursor-pointer mb-4 md:hidden' onClick={handleMobileMenuOpen} >
