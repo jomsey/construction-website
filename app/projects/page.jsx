@@ -4,10 +4,11 @@ import Image from 'next/image'
 export default function Projects() {
   return (
     <main>
-       <section className='h-96 about-us-landing  w-full px-12 flex flex-col justify-center lg:px-24 mt-1' >
-        <div>
-            <h1 className="text-white font-bold text-5xl w-11/12 md:text-6xl  md:w-1/2">The Magical  Luxury</h1>
-        </div>
+       <section className='h-96 projects-landing z- w-full px-12 relative flex flex-col justify-center lg:px-24 mt-1' >
+        <div className='absolute w-full h-full top-0 left-0 bg-black opacity-30'></div>
+        
+         <h1 className="text-white font-bold text-5xl relative  w-11/12 md:text-6xl  md:w-1/2">The Magical  Luxury</h1>
+        
       </section>
       <section className='flex justify-center items-center my-12'>
          <p className='w-3/4 sm:w-1/2 border-double border-spacing-4 border-l-2 py-10 text-gray-600 pl-8 leading-8 text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>

@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import {Triangle,Menu,Delete} from 'feather-icons-react/build/IconComponents'
 import { useRef } from 'react'
+import NavLink from '../nav-link/nav-link'
 
 
 export default function Nav() {
@@ -30,12 +31,26 @@ export default function Nav() {
               <Delete/>
             </div>
                 <ul className='flex gap-8 mb-6 flex-col md:flex-row  items-center text-xl md:text-base'>
-                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/">Home</Link></li>
-                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/about-us">About</Link></li>
-                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/projects">Projects</Link></li>
-                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/contact-us">Contact</Link></li>
-                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/#services">Services</Link></li>
-                    <li className='text-gray-300 md:text-gray-700 font-semibold hover:text-amber-400transition-colors ease-in duration-300'><Link href="/">Blog</Link></li>
+                    <NavLink path='/'>
+                        <Link href="/">Home</Link>
+                    </NavLink>
+
+                    <NavLink path='/projects'>
+                        <Link href="/projects">Projects</Link>
+                    </NavLink>
+                    
+                    <NavLink path='/about-us'>
+                        <Link href="/about-us">About Us</Link>
+                    </NavLink>
+
+                    <NavLink path='/contact-us'>
+                        <Link href="/contact-us">Contact</Link>
+                    </NavLink>
+
+                    <NavLink path='/#services'>
+                        <Link href="/#services">Services</Link>
+                    </NavLink>
+
                 </ul> 
             </div>
             <div className='text-amber-400 cursor-pointer mb-4 md:hidden' onClick={handleMobileMenuOpen} >

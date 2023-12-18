@@ -11,8 +11,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className='bg-white' id='top'>
+    <html lang="en" className='scroll-smooth'>
+      <body className='bg-white scroll-smooth' id='top'>
         <Back2top/>
         <Nav/>
         {children}

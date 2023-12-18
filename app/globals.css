@@ -34,8 +34,25 @@ nav {
 
 .about-us-landing {
     background-image: url('/d.jpg');
-    height: 60vh !important;
+    height: 50vh !important;
     min-height: 360px;
+}
+
+.projects-landing {
+    background-image: url('/kitchen.jpg');
+    height: 50vh !important;
+    min-height: 360px;
+    background-position: left;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-landing {
+    background-image: url('/e.jpg');
+    height: 50vh !important;
+    min-height: 360px;
+    background-position: bottom;
 }
 
 .feather-menu,
