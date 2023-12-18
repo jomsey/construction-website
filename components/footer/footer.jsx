@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className='bg-gray-700 p-12 lg:px-24 pb-0 '>
       <section className='sm:grid grid-cols-5 gap-5'>
       <div className='col-span-2'>
-         <h5 className='font-bold text-2xl text-amber-400'>The B Constructions</h5>
+         <h5 className='font-bold text-2xl text-white'>Build Africa</h5>
          <p className='text-gray-400 mt-4 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi facilis incidunt dolorem perferendis a voluptate quia, nisi aliquid.</p>
        </div>
 
@@ -29,9 +29,9 @@ export default function Footer() {
           <nav className='flex flex-col w-full'>
              <ul className='flex flex-col gap-2  mt-4'>
                   <li className='text-gray-400 font-semibold hover:text-amber-200 text-sm transition-colors ease-in duration-300'><Link href="/">FAQ</Link></li>
-                  <li className='text-gray-400 font-semibold hover:text-amber-200 text-sm transition-colors ease-in duration-300'><Link href="/">Privacy Policy</Link></li>
-                  <li className='text-gray-400 font-semibold hover:text-amber-200 text-sm transition-colors ease-in duration-300'><Link href="/">Disclaimer</Link></li>
-                  <li className='text-gray-400 font-semibold hover:text-amber-200 text-sm transition-colors ease-in duration-300'><Link href="/">Terms Of Us</Link></li>
+                  <li className='text-gray-400 font-semibold hover:text-amber-200 text-sm transition-colors ease-in duration-300'><Link href="/privacy">Privacy Policy</Link></li>
+                  <li className='text-gray-400 font-semibold hover:text-amber-200 text-sm transition-colors ease-in duration-300'><Link href="/disclaimer">Disclaimer</Link></li>
+                  <li className='text-gray-400 font-semibold hover:text-amber-200 text-sm transition-colors ease-in duration-300'><Link href="/terms">Terms Of Us</Link></li>
              </ul>
           </nav>
        </div>

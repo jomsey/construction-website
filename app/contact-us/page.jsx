@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Contact() {
   return (
     <section className='h-96 contact-landing  w-full px-12 flex flex-col justify-center lg:px-24 mt-1' >

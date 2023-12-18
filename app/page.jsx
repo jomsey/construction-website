@@ -1,5 +1,13 @@
 import Image from "next/image"
-import {Facebook,Twitter,Linkedin,Check,ChevronRight,ChevronLeft,Compass} from 'feather-icons-react/build/IconComponents'
+import {Facebook,Twitter,Linkedin,Check,
+        ChevronRight,ChevronLeft,Compass} from 'feather-icons-react/build/IconComponents'
+
+export const metadata = {
+            title: 'Build Africa | We Build For Generations',
+            description: 'Page Description Will Go Here',
+            author: 'Muwanguzi Joseph',
+        
+          }
 
 export default function Home() {
   return (
@@ -17,7 +25,7 @@ export default function Home() {
                   <ChevronLeft className="text-white text-8xl ml-8 hover:text-amber-400"/>
                     <div className="flex flex-col justify-center items-center">
                         <h1 className="text-white font-bold text-5xl w-11/12 md:text-6xl text-center md:w-8/12  ">Making Your Vision Become A Reality</h1>
-                        <button className="hover:bg-amber-500 bg-amber-400 text-white w-60 p-4 mt-12">See More</button>
+                        <button className="hover:bg-amber-500 bg-blue-600 text-white w-60 p-4 mt-12">See More</button>
                     </div>
                   <ChevronRight className="text-white text-8xl mr-8 hover:text-amber-400 "/>
               </div>
