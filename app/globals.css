@@ -60,7 +60,10 @@ nav {
     width: 45px !important;
     height: 45px !important;
 }
-
+.feather-check,.feather-compass{
+    width: 30px;
+    height: 30px;
+}
 .feather-chevron-right,
 .feather-chevron-left {
     width: 100px;

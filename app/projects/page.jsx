@@ -11,7 +11,7 @@ export default function Projects() {
         
       </section>
       <section className='flex justify-center items-center my-12'>
-         <p className='w-3/4 sm:w-1/2 border-double border-spacing-4 border-l-2 py-10 text-gray-600 pl-8 leading-8 text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
+         <p className='w-3/4 sm:w-1/2 border-double border-spacing-4 border-l-2 py-10 text-gray-600 pl-8 leading-8 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
       </section>
       <section className=' grid sm:grid-cols-2 lg:grid-cols-4'>
           <div className='relative cursor-zoom-in h-96'>
@@ -19,7 +19,7 @@ export default function Projects() {
 
               <div className='absolute top-0 left-0 w-full h-full p-12'>
                  <h5 className='text-white font-bold uppercase text-2xl'>Residential</h5>
-                 <h6 className='text-amber-300 font-bold uppercase'>Lodwar</h6>
+                 <h6 className='text-green-300 font-bold uppercase'>Lodwar</h6>
               </div> 
 
               <Image
@@ -35,7 +35,7 @@ export default function Projects() {
 
               <div className='absolute top-0 left-0 w-full h-full p-12'>
                  <h5 className='text-white font-bold uppercase text-2xl'>Hotel</h5>
-                 <h6 className='text-amber-300 font-bold uppercase'>Kampala</h6>
+                 <h6 className='text-green-300 font-bold uppercase'>Kampala</h6>
               </div> 
 
               <Image
@@ -52,7 +52,7 @@ export default function Projects() {
 
               <div className='absolute top-0 left-0 w-full h-full p-12'>
                  <h5 className='text-white font-bold uppercase text-2xl'>Residential</h5>
-                 <h6 className='text-amber-300 font-bold uppercase'>Lodwar</h6>
+                 <h6 className='text-green-300 font-bold uppercase'>Lodwar</h6>
               </div> 
 
               <Image
@@ -69,7 +69,7 @@ export default function Projects() {
 
               <div className='absolute top-0 left-0 w-full h-full p-12'>
                  <h5 className='text-white font-bold uppercase text-2xl'>Restaurant</h5>
-                 <h6 className='text-amber-300 font-bold uppercase'>Eldoret</h6>
+                 <h6 className='text-green-300 font-bold uppercase'>Eldoret</h6>
               </div> 
 
               <Image
