@@ -150,57 +150,57 @@ export default function Home() {
                <p className="text-sm text-gray-500  leading-8 w-full sm:w-3/4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaque ab ducimus exercitationem!</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  mt-8 ">
-                <div className=" p-6 shadow-sm hover:shadow-md shadow-gray-400">
-                        <div className=" border-2 border-green-500  w-20 h-20  text-green-500 flex items-center justify-center" >
+                <div className=" p-6 shadow-sm shadow-green-500 hover:shadow-md">
+                        <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
                             <Compass />
                         </div>
                         <div>
-                            <h4 className="text-gray-700 font-bold my-3 text-base">Construction</h4>
+                            <h4 className="text-green-500 font-bold my-3 text-base">Construction</h4>
                             <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
-                <div className="p-6 shadow-sm shadow-gray-400">
-                        <div className=" border-2 border-green-500  w-20 h-20  text-green-500 flex items-center justify-center" >
+                <div className="p-6 shadow-sm  shadow-green-500">
+                        <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
                             <Compass />
                         </div>
                         <div>
-                            <h4 className="text-gray-700 font-bold my-3 text-base">Special Project</h4>
+                            <h4 className="text-green-500 font-bold my-3 text-base">Special Project</h4>
                             <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
-                <div className="p-6 shadow-sm shadow-gray-400">
-                        <div className=" border-2 border-green-500  w-20 h-20  text-green-500 flex items-center justify-center" >
+                <div className="p-6 shadow-sm shadow-green-500">
+                        <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
                             <Compass />
                         </div>
                         <div>
-                            <h4 className="text-gray-700 font-bold my-3 text-base">Consulting</h4>
+                            <h4 className="text-green-500 font-bold my-3 text-base">Consulting</h4>
                             <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
-                <div className="p-6 shadow-sm shadow-gray-400">
-                        <div className=" border-2 border-green-500  w-20 h-20  text-green-500 flex items-center justify-center" >
+                <div className="p-6 shadow-sm shadow-green-500">
+                        <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
                             <Compass />
                         </div>
                         <div>
-                            <h4 className="text-gray-700 font-bold my-3 text-base">Renovation</h4>
+                            <h4 className="text-green-500 font-bold my-3 text-base">Renovation</h4>
                             <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
-                <div className="p-6 shadow-sm shadow-gray-400">
-                        <div className=" border-2 border-green-500  w-20 h-20  text-green-500 flex items-center justify-center" >
+                <div className="p-6 shadow-sm shadow-green-500">
+                        <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
                             <Compass />
                         </div>
                         <div>
-                            <h4 className="text-gray-700 font-bold my-3 text-base">Architecture</h4>
+                            <h4 className="text-green-500 font-bold my-3 text-base">Architecture</h4>
                             <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>
-                <div className="p-6 shadow-sm shadow-gray-400">
-                        <div className=" border-2 border-green-500  w-20 h-20  text-green-500 flex items-center justify-center" >
+                <div className="p-6 shadow-sm shadow-green-500">
+                        <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
                             <Compass />
                         </div>
                         <div>
-                            <h4 className="text-gray-700 font-bold my-3 text-base">Interior Design</h4>
+                            <h4 className="text-green-500 font-bold my-3 text-base">Interior Design</h4>
                             <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
                         </div>
                 </div>

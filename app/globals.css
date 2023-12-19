@@ -60,7 +60,7 @@ nav {
     width: 45px !important;
     height: 45px !important;
 }
-.feather-check,.feather-compass{
+.feather-check,.feather-compass,.feather-loader{
     width: 30px;
     height: 30px;
 }
@@ -70,6 +70,3 @@ nav {
     height: 100px;
 }
 
-.none {
-    display: none;
-}
