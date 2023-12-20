@@ -1,8 +1,7 @@
-export default function Admin(){
+import React from 'react'
 
-    return(
-        <main>
-            Admin
-        </main>
+export default function Home() {
+    return (
+        <div>AdminHome</div>
     )
 }

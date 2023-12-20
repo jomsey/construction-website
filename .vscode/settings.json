@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
         "tailwindcss"
-    ]
+    ],
+    "terminal.integrated.fontSize": 12,
+    "editor.fontWeight": "normal"
 }

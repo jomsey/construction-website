@@ -1,5 +1,8 @@
 import Image from "next/image"
 import {Facebook,Twitter,Linkedin,Check,Compass} from 'feather-icons-react/build/IconComponents'
+import {FaTractor,FaBrush,FaQuestionCircle,FaCity,FaPencilRuler,FaPaintRoller,FaPaintBrush} from 'react-icons/fa'
+
+
 import Button from "@/components/landing-button/btn"
 
 export const metadata = {
@@ -152,7 +155,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  mt-8 ">
                 <div className=" p-6 shadow-sm shadow-green-500 hover:shadow-md">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <Compass />
+                            <FaTractor className="text-5xl text-" />
                         </div>
                         <div>
                             <h4 className="text-green-500 font-bold my-3 text-base">Construction</h4>
@@ -161,7 +164,7 @@ export default function Home() {
                 </div>
                 <div className="p-6 shadow-sm  shadow-green-500">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <Compass />
+                        <FaCity className="text-5xl text-" />
                         </div>
                         <div>
                             <h4 className="text-green-500 font-bold my-3 text-base">Special Project</h4>
@@ -170,7 +173,7 @@ export default function Home() {
                 </div>
                 <div className="p-6 shadow-sm shadow-green-500">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <Compass />
+                        <FaQuestionCircle className="text-5xl text-" />
                         </div>
                         <div>
                             <h4 className="text-green-500 font-bold my-3 text-base">Consulting</h4>
@@ -179,7 +182,8 @@ export default function Home() {
                 </div>
                 <div className="p-6 shadow-sm shadow-green-500">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <Compass />
+                        <FaPaintBrush className="text-5xl text-" />
+
                         </div>
                         <div>
                             <h4 className="text-green-500 font-bold my-3 text-base">Renovation</h4>
@@ -188,7 +192,7 @@ export default function Home() {
                 </div>
                 <div className="p-6 shadow-sm shadow-green-500">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <Compass />
+                        <FaPencilRuler className="text-5xl text-" />
                         </div>
                         <div>
                             <h4 className="text-green-500 font-bold my-3 text-base">Architecture</h4>
@@ -197,7 +201,7 @@ export default function Home() {
                 </div>
                 <div className="p-6 shadow-sm shadow-green-500">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <Compass />
+                        <FaPaintRoller className="text-5xl text-" />
                         </div>
                         <div>
                             <h4 className="text-green-500 font-bold my-3 text-base">Interior Design</h4>

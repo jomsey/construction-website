@@ -1,23 +1,32 @@
+'use client'
 import './globals.css'
 import Nav from '@/components/nav-bar/nav'
 import Footer from '@/components/footer/footer'
 import Back2top from '@/components/back-to-top-button/b2top'
 import Contact from '@/components/contacts/contacts'
+import { usePathname } from 'next/navigation'
 
-export const metadata = {
-  title: 'Page Title Will Go Here',
-  description: 'Page Description Will Go Here',
-}
 
 export default function RootLayout({ children }) {
+  const path = usePathname()
+  const pathList = ['/admin', '/sign-in', '/admin/messages']
+  const pathInList = pathList.includes(path)
+
   return (
-    <html lang="en" className='scroll-smooth' id='top'>
+    <html lang="en" className='scroll-smooth relative' id='top'>
       <body className='bg-white scroll-smooth '>
-        <Back2top/>
-        <Nav/>
-        {children}
-        <Contact/> 
-        <Footer/>
+        {pathInList ?
+          <>{children}</> :
+
+          <>
+            <Back2top />
+            <Nav />
+            {children}
+            <Contact />
+            <Footer />
+          </>
+
+        }
       </body>
     </html>
   )
@@ -25,6 +34,7 @@ export default function RootLayout({ children }) {
 
 
 
-  
-  
+
+
+
 
