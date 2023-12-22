@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation'
 
 export default function RootLayout({ children }) {
   const path = usePathname()
-  const pathList = ['/admin', '/sign-in', '/admin/messages']
+  const pathList = ['/admin', '/sign-in', '/admin/messages', '/admin/subscriptions', '/admin/events', '/admin/settings', '/admin/about']
   const pathInList = pathList.includes(path)
 
   return (
@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
       <body className='bg-white scroll-smooth '>
         {pathInList ?
           <>{children}</> :
-
           <>
             <Back2top />
             <Nav />
