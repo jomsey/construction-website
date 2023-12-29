@@ -1,17 +1,20 @@
 'use client'
 import React from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa'
 
-export default function () {
-    const list = [
-        { id: 1, title: 'Newest' },
-        { id: 2, title: 'Names' },
-        { id: 3, title: 'Emails' },
-        { id: 4, title: 'Oldest' },
-    ]
-    const [selected, setSelected] = React.useState(list[0].title)
-    const [dropDownVisible, setDropDownVisible] = React.useState(false)
 
+export default function ({ sortByList }) {
+    const [selected, setSelected] = React.useState(sortByList[0].title || "empty list")
+    const [dropDownVisible, setDropDownVisible] = React.useState(false)
+    const router = useRouter()
+    const path = usePathname()
+
+    const handleItemSelected = (item) => {
+        router.push(`${path}?sort_by=${item.title.toLowerCase()}`)
+        setSelected(item.title)
+        setDropDownVisible(false)
+    }
 
     return (
         <>
@@ -20,8 +23,8 @@ export default function () {
             </div>
             <div className={`border z-20 bg-white absolute w-48 rounded-md right-0 ease-in duration-200 mt-2 ${dropDownVisible ? 'visible' : 'invisible'}`}>
                 <ul>
-                    {list.map((l) => (
-                        <li className={` hover:bg-gray-200 cursor-pointer px-4 ease-in duration-200 ${selected === l.title && 'bg-gray-200'}`} onClick={() => setSelected(l.title)} key={l.id}><small className=' text-gray-500'>{l.title}</small></li>
+                    {sortByList.map((l) => (
+                        <li className={` hover:bg-gray-200 cursor-pointer px-4 ease-in duration-200 ${selected === l.title && 'bg-gray-200'}`} onClick={() => handleItemSelected(l)} key={l.id}><small className=' text-gray-500'>{l.title}</small></li>
                     ))}
                 </ul>
             </div>

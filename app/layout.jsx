@@ -9,13 +9,11 @@ import { usePathname } from 'next/navigation'
 
 export default function RootLayout({ children }) {
   const path = usePathname()
-  const pathList = ['/admin', '/sign-in', '/admin/messages', '/admin/subscriptions', '/admin/events', '/admin/settings', '/admin/about']
-  const pathInList = pathList.includes(path)
 
   return (
     <html lang="en" className='scroll-smooth relative' id='top'>
       <body className='bg-white scroll-smooth '>
-        {pathInList ?
+        {!path.toLocaleLowerCase().search('/admin') ?
           <>{children}</> :
           <>
             <Back2top />

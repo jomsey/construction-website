@@ -1,19 +1,14 @@
-import { MessageContext } from '@/providers/messages-privider'
-import React from 'react'
+import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import { GiReturnArrow, GiTrashCan, GiDominoTiles } from 'react-icons/gi'
 
 
-export default function MessageDetails() {
-    const { setMessageDetailsVisible } = React.useContext(MessageContext)
-
+export default function MessageDetails({ params }) {
     return (
-        <div className='absolute w-full h-full top-0 left-0 bg-gray-100 border p-10 md:p-24 '>
+        <div className=' w-full h-full  bg-gray-100 border p-10 md:p-24 '>
             <header className='flex justify-between mb-8 text-2xl items-center text-gray-700'>
-                <span className='cursor-pointer' onClick={() => setMessageDetailsVisible(false)}><GiReturnArrow /></span>
-                <div className='flex gap-4 w-min'>
-                    <GiTrashCan />
-                    <GiDominoTiles />
-                </div>
+                <Link href="/admin/messages"><span className='cursor-pointer'><GiReturnArrow /></span></Link>
+                <span className="cursor-pointer"><GiTrashCan /></span>
             </header>
             <div className='bg-white  rounded-sm p-4 relative overflow-hidden'>
                 <div className='flex flex-col border-b pb-2'>

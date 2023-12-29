@@ -1,12 +1,6 @@
-import {
-    FaAddressBook, FaAddressCard, FaBell,
-    FaCalendar,
-    FaEnvelope,
-    FaEnvelopeOpen, FaHome,
-    FaLock, FaQuestion, FaSearch
-} from "react-icons/fa";
-import { GiMagnifyingGlass, GiCalendar, GiEnvelope, GiHouse, GiStoneWheel, GiCarWheel, GiHandGrip, GiWorld, GiEarthAfricaEurope } from 'react-icons/gi'
-import NavLink from '@/components/nav-link/nav-link'
+import NavLink from "@/components/nav-link/nav-link";
+import { FaAddressCard, FaHome, FaLock, FaQuestion } from "react-icons/fa";
+import { GiMagnifyingGlass, GiCalendar, GiEnvelope, GiHouse, GiCarWheel, GiEarthAfricaEurope } from 'react-icons/gi'
 
 export const metadata = {
     title: 'Admin Dashboard',
@@ -15,22 +9,24 @@ export const metadata = {
 export default function AdminLayOut({ children }) {
     return (
         <main className="grid md:grid-cols-12  w-full  bg-gray-100">
-            <aside className="col-start-1 col-end-3 row-span-6 bg-gray-700 h-full border-r border-gray-500 fixed z-50 overflow-hidden w-0 md:w-auto">
-                <h1 className="text-center text-green-500 mt-8 font-bold">BUILD AFRICA</h1>
-                <div className="mt-10 p-8 border-t border-gray-500">
-                    <ul className="grid grid-col gap-4">
-                        <NavLink path='/admin'><GiHouse className="text-xl" /> Home</NavLink>
-                        <NavLink path='/admin/messages'><GiEnvelope className="text-xl" /> Messages</NavLink>
-                        <NavLink path='/admin/subscriptions'><FaHome className="text-xl" /> Subscriptions</NavLink>
-                        <NavLink path='/admin/events'><GiCalendar className="text-xl" /> Events</NavLink>
-                        <NavLink path='/admin/settings'><GiCarWheel className="text-xl" /> Settings</NavLink>
-                        <NavLink path='/admin/about'><FaQuestion className="text-xl" /> About</NavLink>
-                    </ul>
-                </div>
-                <footer className="absolute bottom-6 border-t border-gray-500 pt-4 px-4 w-full">
-                    <div className="flex gap-8 cursor-pointer items-center text-sm text-green-500"><FaLock /> Logout</div>
-                </footer>
-            </aside>
+            <div className="fixed w-full h-full grid grid-cols-12 row-span-6 z-50 top-0 left-0">
+                <aside className=" col-start-1 col-end-3 bg-gray-700 h-full border-r border-gray-500 overflow-hidden relative ">
+                    <h1 className="text-center text-green-500 mt-8 font-bold">BUILD AFRICA</h1>
+                    <div className="mt-10 p-8 border-t border-gray-500">
+                        <ul className="grid grid-col gap-4">
+                            <NavLink path='/admin'><GiHouse className="text-xl" /> Home</NavLink>
+                            <NavLink path='/admin/messages'><GiEnvelope className="text-xl" /> Messages</NavLink>
+                            <NavLink path='/admin/subscriptions'><FaHome className="text-xl" /> Subscriptions</NavLink>
+                            <NavLink path='/admin/events'><GiCalendar className="text-xl" /> Events</NavLink>
+                            <NavLink path='/admin/settings'><GiCarWheel className="text-xl" /> Settings</NavLink>
+                            <NavLink path='/admin/about'><FaQuestion className="text-xl" /> About</NavLink>
+                        </ul>
+                    </div>
+                    <footer className="absolute bottom-6 border-t border-gray-500 pt-4 px-4 w-full">
+                        <div className="flex gap-8 cursor-pointer items-center text-sm text-green-500"><FaLock /> Logout</div>
+                    </footer>
+                </aside>
+            </div>
 
 
             <main className="col-start-3 col-end-13 row-span-6 relative pb-12">

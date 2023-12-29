@@ -1,10 +1,10 @@
 import { FaGoogle, FaFacebook } from 'react-icons/fa'
-import Back from '@/components/back-to-home-page-button/b2Home';
+// import Back from '@/components/back-to-home-page-button/b2Home';
 
 export default function Login() {
     return (
         <main className='bg-gray-700   flex justify-center items-center gap-10 flex-col relative'>
-            <Back />
+            {/* <Back /> */}
             <div className='flex justify-center items-center gap-10 flex-col sm:w-1/2 md:p-16 p-8'>
                 <h1 className='text-center font-bold text-2xl text-white'>Sign-In</h1>
                 <div className='w-full flex flex-col gap-8'>

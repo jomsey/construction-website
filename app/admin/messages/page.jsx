@@ -1,12 +1,16 @@
-import DropDown from "@/components/filters/sort-items-drop-down";
-import Pagination from "@/components/pagination/Pagination";
+import DropDown from "@/app/admin/components/filters/sort-items-drop-down";
 import { FaSearch } from "react-icons/fa";
-import MessagesList from "@/components/messages-list/messages-list"
+import MessagesList from "@/app/admin/components/messages-list/messages-list"
 import MesagesProvider from "@/providers/messages-privider";
 
+
 export default function Messages() {
-
-
+    const sortMessagesByList = [
+        { id: 1, title: 'Newest' },
+        { id: 2, title: 'Names' },
+        { id: 3, title: 'Emails' },
+        { id: 4, title: 'Oldest' },
+    ]
     return (
         <MesagesProvider>
             <div className="relative w-full p-5">
@@ -22,7 +26,7 @@ export default function Messages() {
                         </form>
                     </div>
                     <div className="place-self-end w-1/2 ">
-                        <DropDown />
+                        <DropDown sortByList={sortMessagesByList} />
                     </div>
                 </div>
 
@@ -30,14 +34,6 @@ export default function Messages() {
                 <h2>You Don't Have Any Messages Here</h2>
             </div> */}
                 <MessagesList />
-                <div className="mt-10">
-                    <Pagination
-                        maxPages={6}
-                        currentPage={8}
-                        totalPages={15}
-                        usePageControls={true}
-                    />
-                </div>
             </div>
 
         </MesagesProvider>
