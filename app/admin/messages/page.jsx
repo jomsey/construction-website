@@ -1,8 +1,6 @@
-'use client'
 import DropDown from "@/components/filters/sort-items-drop-down";
 import Pagination from "@/components/pagination/Pagination";
 import { FaSearch } from "react-icons/fa";
-import React from "react";
 import MessagesList from "@/components/messages-list/messages-list"
 import MesagesProvider from "@/providers/messages-privider";
 

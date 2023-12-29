@@ -7,8 +7,13 @@ import { MessageContext } from '@/providers/messages-privider'
 
 
 
-export default function MessagesList() {
+
+export default async function MessagesList() {
     const { messageDetailVisible, messagesStacked, setMessagesStacked } = React.useContext(MessageContext)
+    // const file = await fs.readFile(process.cwd() + "/lib/messages.json", 'utf8')
+    // const data = JSON.parse(file)
+
+    // console.log(data)
 
     return (
         <div className='border-t pt-8'>
@@ -26,3 +31,5 @@ export default function MessagesList() {
         </div>
     )
 }
+
+
