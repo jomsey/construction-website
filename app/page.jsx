@@ -1,15 +1,13 @@
 import Image from "next/image"
-import { Facebook, Twitter, Linkedin, Check, Compass } from 'feather-icons-react/build/IconComponents'
-import { FaQuestionCircle, FaPlus, FaPercent } from 'react-icons/fa'
-import { GiTrowel, GiPaintBrush, GiPencilRuler, GiCrane, GiPaintRoller, GiCheckMark, GiMoneyStack, GiScales, GiWeight, GiWeightScale, GiWeightLiftingUp, GiHandGrip, GiShakingHands, GiPowerButton, GiEnergyShield, GiEnergySword, GiEnergyBreath, GiPowerGenerator, GiBinoculars } from 'react-icons/gi'
-
-
+import { Facebook, Twitter, Linkedin } from 'feather-icons-react/build/IconComponents'
+import { FaQuestionCircle } from 'react-icons/fa'
+import { GiTrowel, GiPaintBrush, GiPencilRuler, GiCrane, GiPaintRoller, GiCheckMark, GiMoneyStack, GiWeightLiftingUp, GiShakingHands, GiBinoculars } from 'react-icons/gi'
 import Button from "@/components/landing-button/btn"
 
 export const metadata = {
     title: 'Build Africa | We Build For Generations',
-    description: 'Page Description Will Go Here',
-    author: 'Muwanguzi Joseph',
+    description: 'Step into the tranformative world of Build Africa that shapes not just structures but the future.From residential marvels to commercial hubs, each structure is  a testament to our commitment to excellence.',
+    authors: 'Muwanguzi Joseph',
 
 }
 
@@ -22,6 +20,7 @@ export default function Home() {
                     width={1920}
                     height={1280}
                     className="object-cover w-full h-full"
+                    alt="..."
 
                 />
                 <div className="w-full h-full overlay absolute left-0 top-0  flex  flex-col justify-end">
@@ -90,7 +89,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="w-full bg-gray-700 px-12 sm:px-16 py-14 lg:grid grid-cols-2 lg:px-24">
+            <section className="w-full bg-gray-700 px-8 sm:px-16 py-14 lg:grid grid-cols-2 lg:px-24">
                 <div>
                     <h2 className="text-3xl font-extrabold  mb-10 text-white lg:w-3/4">Innovative Construction Solutions</h2>
                     <p className="text-gray-400 text-sm font-medium lg:w-3/4 leading-6">The pride of Build Africa lies in delivering innovative solutions tailored to meet the unique demands of every project. Our commitment to pushing the boundaries of construction excellence is reflected in our approach to problem-solving and project execution. Whether faced with complex architectural challenges, tight timelines, or specific client requirements, our team thrives on creativity and adaptability.</p>
@@ -158,14 +157,14 @@ export default function Home() {
             </section>
 
 
-            <section className="px-12 py-14 sm:p-14 lg:px-24">
+            <section className="px-8 py-14 sm:p-14 lg:px-24">
                 <div className="flex flex-col items-center">
                     <h2 className="text-3xl font-extrabold  mb-10 text-gray-700" id="services">Our Services</h2>
-                    <p className="text-sm text-gray-500  leading-8 w-full sm:w-3/4 text-center font-medium">Our philosophy revolves around a client-centric approach, where we not only understand your immediate needs but also anticipate future trends and advancements. By integrating cutting-edge technologies, sustainable practices, and industry best practices, we ensure that each project benefits from our innovative mindset. From groundbreaking designs to efficient construction methodologies, our goal is to provide services that not only meet expectations but exceed them, setting new standards for quality and ingenuity in the construction industry. Embrace the future of construction  with Build Africa, where innovation is not just a buzzword but a cornerstone of our success.</p>
+                    <p className="text-sm text-gray-600  leading-8 w-full sm:w-3/4 text-center font-medium">Our philosophy revolves around a client-centric approach, where we not only understand your immediate needs but also anticipate future trends and advancements. By integrating cutting-edge technologies, sustainable practices, and industry best practices, we ensure that each project benefits from our innovative mindset. From groundbreaking designs to efficient construction methodologies, our goal is to provide services that not only meet expectations but exceed them, setting new standards for quality and ingenuity in the construction industry. Embrace the future of construction  with Build Africa, where innovation is not just a buzzword but a cornerstone of our success.</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  mt-16 ">
                     <div className=" p-6 shadow-md border">
-                        <div className=" w-24 h-20  text-green-700 flex items-center justify-center" >
+                        <div className=" w-24 h-20  text-green-500 flex items-center justify-center" >
                             <GiTrowel className="text-5xl text-" />
                         </div>
                         <div>
@@ -174,7 +173,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="p-6 shadow-md border">
-                        <div className=" w-20 h-20  text-green-700 flex items-center justify-center" >
+                        <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
                             <GiCrane className="text-5xl text-" />
                         </div>
                         <div>
@@ -183,7 +182,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="p-6 shadow-md border">
-                        <div className=" w-20 h-20  text-green-700 flex items-center justify-center" >
+                        <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
                             <FaQuestionCircle className="text-5xl text-" />
                         </div>
                         <div>
@@ -192,7 +191,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="p-6 shadow-md border">
-                        <div className=" w-20 h-20  text-green-700 flex items-center justify-center" >
+                        <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
                             <GiPaintBrush className="text-5xl text-" />
 
                         </div>
@@ -211,7 +210,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="p-6 shadow-md border">
-                        <div className=" w-20 h-20  text-green-700 flex items-center justify-center" >
+                        <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
                             <GiPaintRoller className="text-5xl text-" />
                         </div>
                         <div>
@@ -225,7 +224,7 @@ export default function Home() {
             </section>
 
             <section className="blue-bee py-24 w-full flex  items-center ">
-                <div className=" w-full sm:w-auto p-12 h-auto grid md:grid-cols-2   relative gap-8">
+                <div className=" w-full sm:w-auto sm:p-12 p-8 h-auto grid md:grid-cols-2   relative gap-8">
                     <div className="absolute w-full h-full left-0 top-0 opacity-90 bg-gray-700">
                     </div>
                     <div className="w-72 z-10 md:pr-2 md:border-r relative">
@@ -251,7 +250,7 @@ export default function Home() {
                     className="h-full w-full object-cover"
                 />
 
-                <div className="p-12">
+                <div className="sm:p-12 p-8">
                     <h2 className="text-3xl font-extrabold  mb-10 text-white">Craftsmanship Beyond Compare</h2>
                     <p className="text-sm font-medium text-gray-400 mb-8 leading-8 ">Discover craftsmanship that goes beyond industry standards. Our construction excellence is marked by attention to detail, quality materials, and a dedication to delivering structures that withstand the test of time. Explore how we elevate construction to an art form with precision and passion.</p>
                     <p className="text-sm font-medium text-gray-400  leading-8">We are not just constructing buildings; we are building tomorrow's landmarks. From residential marvels to commercial hubs, each structure is a testament to our commitment to excellence and forward-thinking design.</p>
@@ -259,9 +258,9 @@ export default function Home() {
 
             </section >
             <section className="py-16">
-                <div className="px-12 sm:px-16">
+                <div className="px-8 sm:px-16 lg:px-24">
                     <h2 className="text-3xl font-extrabold  mb-10 text-gray-700">Your Vision, Our Mission</h2>
-                    <p className="text-sm font-medium text-gray-600 mb-10 leading-8 lg:w-3/4">our vision is at the heart of our mission. Whether you're embarking on a new project or revitalizing an existing space, we are here to bring your aspirations to life. Explore how our client-centric approach and collaborative spirit make your dreams the focal point of every structure we create.</p>
+                    <p className="text-sm font-medium text-gray-600 mb-10 leading-8 lg:w-3/4">Our vision is at the heart of our mission. Whether you're embarking on a new project or revitalizing an existing space, we are here to bring your aspirations to life. Explore how our client-centric approach and collaborative spirit make your dreams the focal point of every structure we create.</p>
                 </div>
                 <div className="grid h-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:h-72 gap-2">
                     <div>

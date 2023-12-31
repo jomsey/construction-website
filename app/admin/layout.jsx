@@ -1,4 +1,5 @@
 import NavLink from "@/components/nav-link/nav-link";
+import Link from "next/link";
 import { FaAddressCard, FaHome, FaLock, FaQuestion } from "react-icons/fa";
 import { GiMagnifyingGlass, GiCalendar, GiEnvelope, GiHouse, GiCarWheel, GiEarthAfricaEurope } from 'react-icons/gi'
 
@@ -8,11 +9,11 @@ export const metadata = {
 }
 export default function AdminLayOut({ children }) {
     return (
-        <main className="grid md:grid-cols-12  w-full  bg-gray-100">
-            <div className="fixed w-full h-full grid grid-cols-12 row-span-6 z-50 top-0 left-0">
-                <aside className=" col-start-1 col-end-3 bg-gray-700 h-full border-r border-gray-500 overflow-hidden relative ">
-                    <h1 className="text-center text-green-500 mt-8 font-bold">BUILD AFRICA</h1>
-                    <div className="mt-10 p-8 border-t border-gray-500">
+        <main className="grid md:grid-cols-12  w-full  bg-gray-100 relative">
+            <div className="">
+                <aside className=" col-start-1 col-end-3 bg-gray-700  border-r border-gray-500 overflow-hidden fixed w-2/12 h-full  row-span-6 z-50 top-0 left-0">
+                    <h1 className="text-center text-green-500  py-4 font-bold">BUILD AFRICA</h1>
+                    <div className=" p-8 border-t border-gray-500">
                         <ul className="grid grid-col gap-4">
                             <NavLink path='/admin'><GiHouse className="text-xl" /> Home</NavLink>
                             <NavLink path='/admin/messages'><GiEnvelope className="text-xl" /> Messages</NavLink>
@@ -38,7 +39,7 @@ export default function AdminLayOut({ children }) {
                         </form>
                     </div>
                     <div className="flex gap-8 items-enter text-gray-100 text-xl">
-                        <span className="cursor-pointer hover:text-green-400 ease-in duration-200 "><GiEarthAfricaEurope /></span>
+                        <Link href="/"><span className="cursor-pointer hover:text-green-400 ease-in duration-200 "><GiEarthAfricaEurope /></span></Link>
                         <span className="cursor-pointer hover:text-green-400 ease-in duration-200"><GiEnvelope /></span>
                         <span className="cursor-pointer hover:text-green-400 ease-in duration-200"><FaAddressCard /></span>
                         <span className="cursor-pointer hover:text-green-400 ease-in duration-200"><GiHouse /></span>

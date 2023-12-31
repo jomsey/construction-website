@@ -4,7 +4,7 @@ import { Facebook, Twitter, Linkedin, Phone } from 'feather-icons-react/build/Ic
 export default function Contact() {
     return (
         <>
-            <section className="bg-gray-700 px-12 sm:px-16 w-full py-12 md:flex gap-4 lg:gap-12 lg:px-24">
+            <section className="bg-gray-700 px-8 sm:px-16 w-full py-12 md:flex gap-4 lg:gap-12 lg:px-24">
                 <div>
                     <h2 className="text-3xl font-extrabold  mb-10 text-white">Do You Have A Question?</h2>
                     <p className="text-sm text-gray-400 font-medium leading-8 sm:w-3/4">Ready to embark on a journey of architectural and construction excellence? Contact us to initiate a conversation about your project. Whether you have a clear vision or are seeking inspiration, our team is eager to collaborate and turn your ideas into tangible, awe-inspiring realities.</p>
@@ -63,7 +63,7 @@ export default function Contact() {
                 </div>
             </section>
 
-            <section className="w-full px-12 sm:px-16 py-6 bg-gray-700 sm:flex gap-12 border-t border-b lg:px-24">
+            <section className="w-full px-8 sm:px-16 py-6 bg-gray-700 sm:flex gap-12 border-t border-b border-gray-500 lg:px-24">
                 <div className="sm:w-1/2">
                     <h4 className="text-green-500 font-extrabold text-xl">Subscribe To Our News Letter</h4>
                     <p className="text-sm mt-4 text-gray-400 font-medium  leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam.</p>

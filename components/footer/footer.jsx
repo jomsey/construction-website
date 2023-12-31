@@ -5,7 +5,7 @@ import { Facebook, Twitter, Instagram } from 'feather-icons-react/build/IconComp
 
 export default function Footer() {
    return (
-      <footer className='bg-gray-700 p-12 lg:px-24 pb-0 '>
+      <footer className='bg-gray-700 p-8 sm:p-12 lg:px-24 pb-0 '>
          <section className='sm:grid grid-cols-5 gap-5'>
             <div className='col-span-2'>
                <h5 className='font-bold text-2xl text-white'>Build Africa</h5>
@@ -44,7 +44,7 @@ export default function Footer() {
                </div>
             </div>
          </section>
-         <footer className='border-t mt-5'>
+         <footer className='border-t border-gray-600 mt-5'>
             <small className='text-xs  mx-2 text-green-300'> developed by muwanguzi joseph</small>
          </footer>
       </footer>

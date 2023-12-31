@@ -3,17 +3,18 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function MessageCard({ badgeColor, message, dateCreated, sentBy }) {
+    const badgeColors = ["blue-500", "red-600", "red-600"]
 
     return (
         <Link href="/admin/messages/3">
             <div className='bg-white shadow-md rounded-lg p-4 relative overflow-hidden cursor-pointer'>
                 <div className='flex items-end gap-5 border-b pb-2 relative'>
                     <small className='text-gray-400 absolute top-0 right-3'>{dateCreated}</small>
-                    <span className={`rounded-full p-3 w-8 h-8 ${badgeColor || 'bg-blue-500'} text-white flex items-center justify-center font-bold text-2xl`}>{sentBy.toUpperCase()[0]}</span>
+                    <span className={`rounded-full p-3 w-8 h-8 ${'bg-' + badgeColors[0]}  text-white flex items-center justify-center font-bold text-2xl`}>{sentBy.toUpperCase()[0]}</span>
                     <span className="text-gay-700 text-sm font-semibold">John Doe</span>
                 </div>
                 <div>
-                    <p className='text-sm text-gray-600 my-4'>{message}</p>
+                    <p className='text-sm text-gray-600 my-4'>{message.length <= 80 ? message : message.slice(0, 81).concat(' ...')}</p>
                 </div>
             </div>
         </Link>

@@ -40,7 +40,7 @@ export default function Nav() {
             <NavLink path='/about-us'>About Us</NavLink>
             <NavLink path='/contact-us'>Contact</NavLink>
             <NavLink path='/#services'>Services</NavLink>
-            <NavLink path='/admin'>DashBoard</NavLink>
+            {/* <NavLink path='/admin'>DashBoard</NavLink> */}
           </ul>
         </div>
         <div className='text-green-400 cursor-pointer mb-4 md:hidden' onClick={handleMobileMenuOpen} >
