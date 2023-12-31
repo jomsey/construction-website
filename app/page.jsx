@@ -24,7 +24,7 @@ export default function Home() {
 
                 />
                 <div className="w-full h-full overlay absolute left-0 top-0  flex  flex-col justify-end">
-                    <div className="flex-col flex px-14 lg:px-24 pb-12 gap-8 md:w-1/2">
+                    <div className="flex-col flex px-8 sm:px-14 lg:px-24 pb-12 gap-8 md:w-1/2">
                         <h1 className="text-white font-bold text-5xl w-11/12 md:text-6xl">We Are <span className="text-green-500">Construction</span>  Experts</h1>
                         <p className="text-gray-200 leading-8 font-semibold">We take pride in building the future by offering a comprehensive range of services that cater to diverse construction needs</p>
                         <Button />
@@ -33,7 +33,7 @@ export default function Home() {
 
             </section>
 
-            <section className="w-full bg-gray-700  p-14 flex gap-10 justify-between flex-col lg:px-24">
+            <section className="w-full bg-gray-700  px-8 sm:p-14 flex gap-10 justify-between flex-col lg:px-24">
                 <p className="text-gray-400  md:w-1/2 leading-6 text-sm font-medium">Build Africa's commitment to excellence is evident in the breadth and depth of our offerings, designed to ensure that every project is approached with precision and expertise. From residential constructions that redefine modern living spaces to commercial developments that set new industry benchmarks, our services encompass the full spectrum of the construction landscape.</p>
                 <div className="text-white flex gap-10 ">
                     <Facebook className="text-green-500 cursor-pointer" />
@@ -43,7 +43,7 @@ export default function Home() {
             </section>
 
             <section className="lg:grid grid-cols-2  lg:gap-8 lg:px-24">
-                <div className="px-14 pb-14 md:px-0">
+                <div className="px-8 sm:px-14 pb-14 md:px-0">
                     <h2 className="text-3xl font-extrabold mt-14 mb-10 text-slate-700">We Are Leaders In Construction</h2>
                     <p className="text-gray-600  lg:w-3/4 leading-6 text-sm font-medium">Our portfolio extends beyond traditional building methods; we specialize in cutting-edge techniques, sustainable practices, and innovative solutions. Whether it's constructing state-of-the-art structures, managing complex renovations, or providing expert consultation, our team of skilled professionals is dedicated to delivering results that stand the test of time. With a focus on quality craftsmanship, attention to detail, and a client-centric approach, we are not just constructing buildings; we are shaping the future, one project at a time. Embrace a new era in construction with Build Africa, where our services go beyond construction – they pave the way for a better, more sustainable tomorrow.</p>
 
