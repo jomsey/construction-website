@@ -9,7 +9,7 @@ export default function Footer() {
          <section className='sm:grid grid-cols-5 gap-5'>
             <div className='col-span-2'>
                <h5 className='font-bold text-2xl text-white'>Build Africa</h5>
-               <p className='text-gray-400 mt-4 text-sm font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi facilis incidunt dolorem perferendis a voluptate quia, nisi aliquid.</p>
+               <p className='text-gray-400 mt-4 text-sm font-medium lg:w-3/4'> Embrace the future of construction  with Build Africa, where innovation is not just a buzzword but a cornerstone of our success.</p>
             </div>
 
             <div>

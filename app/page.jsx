@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { Facebook, Twitter, Linkedin } from 'feather-icons-react/build/IconComponents'
-import { FaQuestionCircle } from 'react-icons/fa'
-import { GiTrowel, GiPaintBrush, GiPencilRuler, GiCrane, GiPaintRoller, GiCheckMark, GiMoneyStack, GiWeightLiftingUp, GiShakingHands, GiBinoculars } from 'react-icons/gi'
+import { GiTrowel, GiPencilRuler, GiPaintRoller, GiCheckMark, GiMoneyStack, GiWeightLiftingUp, GiShakingHands, GiBinoculars, GiSparkles, GiThink, GiBrickWall } from 'react-icons/gi'
 import Button from "@/components/landing-button/btn"
 
 export const metadata = {
@@ -33,7 +32,7 @@ export default function Home() {
 
             </section>
 
-            <section className="w-full bg-gray-700  px-8 sm:p-14 flex gap-10 justify-between flex-col lg:px-24">
+            <section className="w-full bg-gray-700  px-8 py-14 sm:p-14 flex gap-10 justify-between flex-col lg:px-24">
                 <p className="text-gray-400  md:w-1/2 leading-6 text-sm font-medium">Build Africa's commitment to excellence is evident in the breadth and depth of our offerings, designed to ensure that every project is approached with precision and expertise. From residential constructions that redefine modern living spaces to commercial developments that set new industry benchmarks, our services encompass the full spectrum of the construction landscape.</p>
                 <div className="text-white flex gap-10 ">
                     <Facebook className="text-green-500 cursor-pointer" />
@@ -160,21 +159,21 @@ export default function Home() {
             <section className="px-8 py-14 sm:p-14 lg:px-24">
                 <div className="flex flex-col items-center">
                     <h2 className="text-3xl font-extrabold  mb-10 text-gray-700" id="services">Our Services</h2>
-                    <p className="text-sm text-gray-600  leading-8 w-full sm:w-3/4 text-center font-medium">Our philosophy revolves around a client-centric approach, where we not only understand your immediate needs but also anticipate future trends and advancements. By integrating cutting-edge technologies, sustainable practices, and industry best practices, we ensure that each project benefits from our innovative mindset. From groundbreaking designs to efficient construction methodologies, our goal is to provide services that not only meet expectations but exceed them, setting new standards for quality and ingenuity in the construction industry. Embrace the future of construction  with Build Africa, where innovation is not just a buzzword but a cornerstone of our success.</p>
+                    <p className="text-sm text-gray-600  leading-8 w-full sm:w-3/4 text-center font-medium">Our services revolve around a client-centric approach, where we not only understand your immediate needs but also anticipate future trends and advancements. By integrating cutting-edge technologies, sustainable practices, and industry best practices, we ensure that each project benefits from our innovative mindset. </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  mt-16 ">
                     <div className=" p-6 shadow-md border">
                         <div className=" w-24 h-20  text-green-500 flex items-center justify-center" >
-                            <GiTrowel className="text-5xl text-" />
+                            <GiTrowel className="text-6xl text-" />
                         </div>
                         <div>
                             <h4 className="text-gray-600 font-bold my-3 text-xl">Construction</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-sm text-gray-600">We are setting new standards for quality and ingenuity in the construction industry.</p>
                         </div>
                     </div>
                     <div className="p-6 shadow-md border">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <GiCrane className="text-5xl text-" />
+                            <GiBrickWall className="text-6xl text-" />
                         </div>
                         <div>
                             <h4 className="text-gray-600 font-bold my-3 text-xl">Special Project</h4>
@@ -183,7 +182,7 @@ export default function Home() {
                     </div>
                     <div className="p-6 shadow-md border">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <FaQuestionCircle className="text-5xl text-" />
+                            <GiThink className="text-6xl text-" />
                         </div>
                         <div>
                             <h4 className="text-gray-600 font-bold my-3 text-xl">Consulting</h4>
@@ -192,7 +191,7 @@ export default function Home() {
                     </div>
                     <div className="p-6 shadow-md border">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <GiPaintBrush className="text-5xl text-" />
+                            <GiSparkles className="text-6xl text-" />
 
                         </div>
                         <div>
@@ -202,7 +201,7 @@ export default function Home() {
                     </div>
                     <div className="p-6 shadow-md border">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <GiPencilRuler className="text-5xl text-" />
+                            <GiPencilRuler className="text-6xl text-" />
                         </div>
                         <div>
                             <h4 className="text-gray-600 font-bold my-3 text-xl">Architecture</h4>
@@ -211,7 +210,7 @@ export default function Home() {
                     </div>
                     <div className="p-6 shadow-md border">
                         <div className=" w-20 h-20  text-green-500 flex items-center justify-center" >
-                            <GiPaintRoller className="text-5xl text-" />
+                            <GiPaintRoller className="text-6xl text-" />
                         </div>
                         <div>
                             <h4 className="text-gray-600 font-bold my-3 text-xl">Interior Design</h4>
@@ -234,7 +233,7 @@ export default function Home() {
                     </div>
                     <div className="w-72 z-10  md:pr-2 relative">
                         <h3 className="text-gray-100 font-bold mb-3 text-xl">Sustainability at the Core</h3>
-                        <p className="text-sm text-gray-400  font-medium leading-8">Sustainability isn't just a trend; it's a fundamental aspect of our ethos. [Your Company Name] is dedicated to integrating eco-friendly practices into our designs and construction methodologies. From energy-efficient structures to green building technologies, we are committed to building a sustainable future.</p>
+                        <p className="text-sm text-gray-400  font-medium leading-8">Sustainability isn't just a trend; it's a fundamental aspect of our ethos. Build Africa is dedicated to integrating eco-friendly practices into our designs and construction methodologies. From energy-efficient structures to green building technologies, we are committed to building a sustainable future.</p>
 
                     </div>
 
