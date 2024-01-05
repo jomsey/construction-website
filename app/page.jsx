@@ -46,7 +46,7 @@ export default function Home() {
                     <h2 className="text-3xl font-extrabold mt-14 mb-10 text-slate-700">We Are Leaders In Construction</h2>
                     <p className="text-gray-600  lg:w-3/4 leading-6 text-sm font-medium">Our portfolio extends beyond traditional building methods; we specialize in cutting-edge techniques, sustainable practices, and innovative solutions. Whether it's constructing state-of-the-art structures, managing complex renovations, or providing expert consultation, our team of skilled professionals is dedicated to delivering results that stand the test of time. With a focus on quality craftsmanship, attention to detail, and a client-centric approach, we are not just constructing buildings; we are shaping the future, one project at a time. Embrace a new era in construction with Build Africa, where our services go beyond construction – they pave the way for a better, more sustainable tomorrow.</p>
 
-                    <div className="mt-6 flex flex-col gap-6 justify-evenly">
+                    <div className="mt-12 flex flex-col gap-6 justify-evenly">
                         <div className="flex gap-6 items-center" >
                             <GiCheckMark className="text-green-500 text-lg font-bold" />
                             <span className="font-bold text-sm text-gray-700">Architectural Design: Conceptualizing Your Vision</span>
