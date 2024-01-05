@@ -7,7 +7,7 @@ export default function AboutUs() {
     <main>
       <section className='about-us-landing bg-center w-full px-12 flex flex-col justify-center lg:px-24 mt-1' >
         <div>
-          <h1 className="text-white font-bold text-5xl w-11/12 md:text-6xl  md:w-1/2">Shaping Spaces, Building Dreams</h1>
+          <h1 className="text-white font-bold text-5xl w-11/12 md:text-6xl  md:w-1/2">Shaping Spaces</h1>
           <button className='text-white font-semibold border-white border py-3 px-5 mt-8'>See Our Work</button>
         </div>
       </section>

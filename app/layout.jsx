@@ -7,7 +7,6 @@ import Contact from '@/components/contacts/contacts'
 import { usePathname } from 'next/navigation'
 
 
-
 export default function RootLayout({ children }) {
   const path = usePathname()
 
