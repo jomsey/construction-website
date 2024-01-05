@@ -2,15 +2,29 @@ import { Facebook, Twitter, Linkedin, Phone } from 'feather-icons-react/build/Ic
 
 
 export default function Contact() {
-    const handleFormSubmit = (e) => {
-        e.preventDefault()
+    async function handleFormSubmit(event) {
+        event.preventDefault()
+
+        const formData = new FormData(event.currentTarget)
+
+        const response = await fetch('/api/contact', {
+            method: "POST",
+            body: {
+                name: formData.get("name"),
+                phone: formData.get("phone"),
+                email: formData.get("emmail"),
+                message: formData.get("message")
+            }
+        })
+
+        // const data = await response.json()
 
 
     }
     return (
         <>
             <section className="bg-gray-700 px-8 sm:px-16 w-full py-12 md:flex gap-4 lg:gap-12 lg:px-24">
-                <div>
+                <div data-aos="fade-right">
                     <h2 className="text-3xl font-extrabold  mb-10 text-white">Do You Have A Question?</h2>
                     <p className="text-sm text-gray-400 font-medium leading-8 sm:w-3/4">Ready to embark on a journey of architectural and construction excellence? Contact us to initiate a conversation about your project. Whether you have a clear vision or are seeking inspiration, our team is eager to collaborate and turn your ideas into tangible, awe-inspiring realities.</p>
 
@@ -51,16 +65,16 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <h3 className="text-2xl font-bold md:mt-0 my-10 text-white ">Get In Touch !!</h3>
                     <p className="text-sm text-gray-400 font-medium leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaq</p>
-                    <form action="" className="mt-8 flex flex-col gap-5" onSubmit={handleFormSubmit}>
+                    <form onSubmit={handleFormSubmit} className="mt-8 flex flex-col gap-5" method="POST">
                         <div className='flex flex-col gap-5 sm:flex-row'>
-                            <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Name" type="text" />
-                            <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Phone" type="phone" />
+                            <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Name" name="name" type="text" />
+                            <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Phone" name="phone" type="phone" />
                         </div>
-                        <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Email" type="email" />
-                        <textarea className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder=" Message"></textarea>
+                        <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Email" name="email" type="email" />
+                        <textarea className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder=" Message" name="email"></textarea>
                         <button className="bg-green-500 text-white px-6 py-3 text-base font-semibold w-max" type="submit">Send</button>
                     </form>
                 </div>

@@ -33,7 +33,7 @@ export default function Home() {
             </section>
 
             <section className="w-full bg-gray-700  px-8 py-14 sm:p-14 flex gap-10 justify-between flex-col lg:px-24">
-                <p className="text-gray-400  md:w-1/2 leading-6 text-sm font-medium">Build Africa's commitment to excellence is evident in the breadth and depth of our offerings, designed to ensure that every project is approached with precision and expertise. From residential constructions that redefine modern living spaces to commercial developments that set new industry benchmarks, our services encompass the full spectrum of the construction landscape.</p>
+                <p className="text-gray-400  md:w-1/2 leading-6 text-sm font-medium" data-aos="fade-right">Build Africa's commitment to excellence is evident in the breadth and depth of our offerings, designed to ensure that every project is approached with precision and expertise. From residential constructions that redefine modern living spaces to commercial developments that set new industry benchmarks, our services encompass the full spectrum of the construction landscape.</p>
                 <div className="text-white flex gap-10 ">
                     <Facebook className="text-green-500 cursor-pointer" />
                     <Twitter className="text-green-500 cursor-pointer" />
@@ -41,10 +41,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="lg:grid grid-cols-2  lg:gap-8 lg:px-24">
-                <div className="px-8 sm:px-14 pb-14 md:px-0">
+            <section className="lg:grid grid-cols-2  lg:gap-8 lg:px-24" data-aos="fade-up">
+                <div className="px-8 sm:px-14 pb-14 md:px-0" >
                     <h2 className="text-3xl font-extrabold mt-14 mb-10 text-slate-700">We Are Leaders In Construction</h2>
-                    <p className="text-gray-600  lg:w-3/4 leading-6 text-sm font-medium">Our portfolio extends beyond traditional building methods; we specialize in cutting-edge techniques, sustainable practices, and innovative solutions. Whether it's constructing state-of-the-art structures, managing complex renovations, or providing expert consultation, our team of skilled professionals is dedicated to delivering results that stand the test of time. With a focus on quality craftsmanship, attention to detail, and a client-centric approach, we are not just constructing buildings; we are shaping the future, one project at a time. Embrace a new era in construction with Build Africa, where our services go beyond construction – they pave the way for a better, more sustainable tomorrow.</p>
+                    <p className="text-gray-600  lg:w-3/4 leading-6 text-sm font-medium" >Our portfolio extends beyond traditional building methods; we specialize in cutting-edge techniques, sustainable practices, and innovative solutions. Whether it's constructing state-of-the-art structures, managing complex renovations, or providing expert consultation, our team of skilled professionals is dedicated to delivering results that stand the test of time. With a focus on quality craftsmanship, attention to detail, and a client-centric approach, we are not just constructing buildings; we are shaping the future, one project at a time. Embrace a new era in construction with Build Africa, where our services go beyond construction – they pave the way for a better, more sustainable tomorrow.</p>
 
                     <div className="mt-12 flex flex-col gap-6 justify-evenly">
                         <div className="flex gap-6 items-center" >
@@ -161,7 +161,7 @@ export default function Home() {
                     <h2 className="text-3xl font-extrabold  mb-10 text-gray-700" id="services">Our Services</h2>
                     <p className="text-sm text-gray-600  leading-8 w-full sm:w-3/4 text-center font-medium">Our services revolve around a client-centric approach, where we not only understand your immediate needs but also anticipate future trends and advancements. By integrating cutting-edge technologies, sustainable practices, and industry best practices, we ensure that each project benefits from our innovative mindset. </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  mt-16 ">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  mt-16 " data-aos="fade-up">
                     <div className=" p-6 shadow-md border">
                         <div className=" w-24 h-20  text-green-500 flex items-center justify-center" >
                             <GiTrowel className="text-6xl text-" />
@@ -247,9 +247,11 @@ export default function Home() {
                     width={1000}
                     height={500}
                     className="h-full w-full object-cover"
+                    data-aos="fade-right"
+
                 />
 
-                <div className="sm:p-12 p-8">
+                <div className="sm:p-12 p-8" data-aos="fade-left">
                     <h2 className="text-3xl font-extrabold  mb-10 text-white">Craftsmanship Beyond Compare</h2>
                     <p className="text-sm font-medium text-gray-400 mb-8 leading-8 ">Discover craftsmanship that goes beyond industry standards. Our construction excellence is marked by attention to detail, quality materials, and a dedication to delivering structures that withstand the test of time. Explore how we elevate construction to an art form with precision and passion.</p>
                     <p className="text-sm font-medium text-gray-400  leading-8">We are not just constructing buildings; we are building tomorrow's landmarks. From residential marvels to commercial hubs, each structure is a testament to our commitment to excellence and forward-thinking design.</p>
@@ -259,9 +261,9 @@ export default function Home() {
             <section className="py-16">
                 <div className="px-8 sm:px-16 lg:px-24">
                     <h2 className="text-3xl font-extrabold  mb-10 text-gray-700">Your Vision, Our Mission</h2>
-                    <p className="text-sm font-medium text-gray-600 mb-10 leading-8 lg:w-3/4">Our vision is at the heart of our mission. Whether you're embarking on a new project or revitalizing an existing space, we are here to bring your aspirations to life. Explore how our client-centric approach and collaborative spirit make your dreams the focal point of every structure we create.</p>
+                    <p className="text-sm font-medium text-gray-600 mb-10 leading-8 lg:w-3/4" data-aos="fade-up">Our vision is at the heart of our mission. Whether you're embarking on a new project or revitalizing an existing space, we are here to bring your aspirations to life. Explore how our client-centric approach and collaborative spirit make your dreams the focal point of every structure we create.</p>
                 </div>
-                <div className="grid h-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:h-72 gap-2">
+                <div className="grid h-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:h-72 gap-2" data-aos="fade-up">
                     <div>
                         <Image
                             alt="..."
