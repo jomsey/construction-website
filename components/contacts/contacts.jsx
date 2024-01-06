@@ -24,12 +24,12 @@ export default function Contact() {
     return (
         <>
             <section className="bg-gray-700 px-8 sm:px-16 w-full py-12 md:flex gap-4 lg:gap-12 lg:px-24">
-                <div data-aos="fade-right">
-                    <h2 className="text-3xl font-extrabold  mb-10 text-white">Do You Have A Question?</h2>
-                    <p className="text-sm text-gray-400 font-medium leading-8 sm:w-3/4">Ready to embark on a journey of architectural and construction excellence? Contact us to initiate a conversation about your project. Whether you have a clear vision or are seeking inspiration, our team is eager to collaborate and turn your ideas into tangible, awe-inspiring realities.</p>
+                <div className="overflow-hidden">
+                    <h2 className="text-3xl font-extrabold  mb-10 text-white" data-aos="fade-right">Do You Have A Question?</h2>
+                    <p className="text-sm text-gray-400 font-medium leading-8 sm:w-3/4" data-aos="fade-right">Ready to embark on a journey of architectural and construction excellence? Contact us to initiate a conversation about your project. Whether you have a clear vision or are seeking inspiration, our team is eager to collaborate and turn your ideas into tangible, awe-inspiring realities.</p>
 
-                    <div className="pt-10 grid  gap-4">
-                        <div className="flex gap-2">
+                    <div className="pt-10 grid  gap-4 ">
+                        <div className="flex gap-2" data-aos="fade-right">
                             <div className=" border border-white w-11 h-11 flex justify-center items-center text-white">
                                 <Phone />
                             </div>
@@ -38,7 +38,7 @@ export default function Contact() {
                                 <small className="text-gray-200 mt-1 block">+254-000-000-000</small>
                             </div>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2" data-aos="fade-right">
                             <div className=" border border-white w-11 h-11 flex justify-center items-center text-white">
                                 <Facebook />
                             </div>
@@ -46,7 +46,7 @@ export default function Contact() {
                                 <small className="text-green-500 font-bold block">Facebook</small>
                                 <small className="text-gray-200 mt-1 block">simo</small>
                             </div>
-                        </div><div className="flex gap-2">
+                        </div><div className="flex gap-2" data-aos="fade-right">
                             <div className=" border border-white w-11 h-11 flex justify-center items-center text-white">
                                 <Twitter />
                             </div>
@@ -54,7 +54,7 @@ export default function Contact() {
                                 <small className="text-green-500 font-bold block">Twitter</small>
                                 <small className="text-gray-200 mt-1 block">simo</small>
                             </div>
-                        </div><div className="flex gap-2">
+                        </div><div className="flex gap-2" data-aos="fade-right">
                             <div className=" border border-white w-11 h-11 flex justify-center items-center text-white">
                                 <Linkedin />
                             </div>
@@ -65,17 +65,17 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left">
-                    <h3 className="text-2xl font-bold md:mt-0 my-10 text-white ">Get In Touch !!</h3>
-                    <p className="text-sm text-gray-400 font-medium leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaq</p>
+                <div>
+                    <h3 className="text-2xl font-bold md:mt-0 my-10 text-white " data-aos="fade-left">Get In Touch !!</h3>
+                    <p className="text-sm text-gray-400 font-medium leading-8" data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaq</p>
                     <form onSubmit={handleFormSubmit} className="mt-8 flex flex-col gap-5" method="POST">
                         <div className='flex flex-col gap-5 sm:flex-row'>
-                            <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Name" name="name" type="text" />
-                            <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Phone" name="phone" type="phone" />
+                            <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Name" name="name" type="text" data-aos="fade-up" />
+                            <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Phone" name="phone" type="phone" data-aos="fade-up" />
                         </div>
-                        <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Email" name="email" type="email" />
-                        <textarea className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder=" Message" name="email"></textarea>
-                        <button className="bg-green-500 text-white px-6 py-3 text-base font-semibold w-max" type="submit">Send</button>
+                        <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Email" name="email" type="email" data-aos="fade-up" />
+                        <textarea className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder=" Message" name="email" data-aos="fade-up"></textarea>
+                        <button className="bg-green-500 text-white px-6 py-3 text-base font-semibold w-max" type="submit" data-aos="fade-up">Send</button>
                     </form>
                 </div>
             </section>

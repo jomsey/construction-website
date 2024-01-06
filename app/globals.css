@@ -1,10 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
     max-width: 1600px;
     min-width: 300px;
     margin: auto;
+    overflow-x: hidden;
+}
+
+
+section {
+    overflow: hidden;
+}
+
+@layer base {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-roboto leading-10;
+
+    }
+
+    h2 {
+        letter-spacing: 2px;
+        @apply text-3xl font-extrabold mb-10 lg:w-3/4 text-green-500;
+
+    }
 }
 
 .logo {
@@ -22,7 +48,7 @@ nav {
 }
 
 .hero {
-    height: 85vh !important;
+    height: 75vh !important;
     min-height: 360px;
 }
 
@@ -55,18 +81,18 @@ nav {
     background-position: bottom;
 }
 
-.feather-menu,
-.feather-delete {
+.feather-menu {
     width: 45px !important;
     height: 45px !important;
 }
-.feather-check,.feather-compass,.feather-loader{
+
+.feather-loader {
     width: 30px;
     height: 30px;
 }
-.feather-chevron-right,
-.feather-chevron-left {
-    width: 100px;
-    height: 100px;
-}
 
+@media screen and (max-width:414px) {
+    .hero {
+        height: 65vh !important;
+    }
+}

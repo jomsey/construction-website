@@ -13,7 +13,7 @@ export default function AboutUs() {
       </section>
 
       <section className="p-8 md:px-24 w-full lg:flex gap-12  py-14">
-        <div>
+        <div className="rounded-md overflow-hidden" data-aos="fade-top">
           <Image
             src='/h.jpg'
             width={1920}
@@ -24,7 +24,7 @@ export default function AboutUs() {
         </div>
 
         <div className="flex flex-col-reverse gap-12">
-          <div>
+          <div className="overflow-hidden rounded-md" data-aos="fade-top">
             <Image
               src='/new-home.jpg'
               width={1920}
@@ -35,57 +35,57 @@ export default function AboutUs() {
           </div>
 
           <div>
-            <h2 className="text-3xl font-extrabold mt-14  text-gray-700 ">The Architectural <br></br> Language</h2>
-            <p className="text-gray-600 text-sm font-medium  leading-6 my-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
-            <p className="text-gray-600 text-sm font-medium  leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
+            <h2 className="mt-14" data-aos="fade-top">The Architectural <br></br> Language</h2>
+            <p className="text-gray-600 text-sm font-medium  leading-6 my-8" data-aos="fade-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
+            <p className="text-gray-600 text-sm font-medium  leading-6" data-aos="fade-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
           </div>
         </div>
 
       </section>
 
       <section className='p-8 py-14 md:px-24 w-full bg-gray-700'>
-        <h2 className="text-3xl font-extrabold mb-8  text-white">Provide The Best <br></br> Services</h2>
-        <p className="text-gray-300 text-sm font-medium  leading-6 sm:w-3/4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
+        <h2 data-aos="fade-top">Provide The Best Services</h2>
+        <p className="text-gray-300 text-sm font-medium  leading-6 sm:w-3/4" data-aos="fade-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
 
         <div className='mt-10 grid gap-6 sm:grid-cols-2 lg:gap-10 xlg:grid-cols-4'>
-          <div className="border p-6 rounded-md">
+          <div className="border p-6 rounded-md" data-aos="fade-top">
             <div className=" text-gray-300" >
               <GiSparkles className='text-7xl' />
             </div>
             <div>
-              <h3 className="text-white font-bold mb-8 mt-4 text-xl">Conceptualizing Yor Vision.</h3>
+              <h3 className="text-green-500 font-medium my-8 text-xl">Conceptualizing Yor Vision.</h3>
               <p className="text-sm text-gray-400 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, pariatur, assumenda aspernatur ex modi iure inventore earum natus dicta consequatur commodi id autem debitis placeat?</p>
             </div>
           </div>
 
-          <div className="border p-6 rounded-md">
+          <div className="border p-6 rounded-md" data-aos="fade-top">
             <div className=" text-gray-300" >
               <GiGears className='text-7xl' />
 
             </div>
             <div>
-              <h3 className="text-white font-bold my-8 text-xl">Comprehensive Solutions</h3>
+              <h3 className="text-green-500 font-medium my-8 text-xl">Comprehensive Solutions</h3>
               <p className="text-sm text-gray-400 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, pariatur, assumenda aspernatur ex modi iure inventore earum natus dicta consequatur commodi id autem debitis placeat?</p>
             </div>
           </div>
 
-          <div className="border p-6 rounded-md">
+          <div className="border p-6 rounded-md" data-aos="fade-top">
             <div className=" text-gray-300" >
               <GiBrickWall className='text-7xl' />
 
             </div>
             <div>
-              <h3 className="text-white font-bold my-8 text-xl">Construction Expertise.</h3>
+              <h3 className="text-green-500 font-medium my-8 text-xl">Construction Expertise.</h3>
               <p className="text-sm text-gray-400 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, pariatur, assumenda aspernatur ex modi iure inventore earum natus dicta consequatur commodi id autem debitis placeat?</p>
             </div>
           </div>
-          <div className="border p-6 rounded-md">
+          <div className="border p-6 rounded-md" data-aos="fade-top">
             <div className=" text-gray-300" >
               <GiAchievement className='text-7xl' />
 
             </div>
             <div>
-              <h3 className="text-white font-bold my-8 text-xl">Collaborative Excellence</h3>
+              <h3 className="text-green-500 font-medium my-8 text-xl">Collaborative Excellence</h3>
               <p className="text-sm text-gray-400 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, pariatur, assumenda aspernatur ex modi iure inventore earum natus dicta consequatur commodi id autem debitis placeat?</p>
             </div>
           </div>
@@ -93,13 +93,13 @@ export default function AboutUs() {
       </section>
       <section className='p-8 py-14 md:px-24 w-full md:grid grid-cols-2 gap-12'>
         <div className='md:py-12'>
-          <h2 className="text-3xl font-extrabold  text-gray-700 ">Our Constuction Legacy</h2>
-          <p className='text-gray-700 text-sm font-medium  py-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repudiandae?</p>
-          <p className="text-gray-600 text-sm font-medium  leading-6 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
-          <p className="text-gray-600 text-sm font-medium  leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
+          <h2 data-aos="fade-right">Our Constuction Legacy</h2>
+          <p className='text-gray-700 text-sm font-medium  py-6' data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repudiandae?</p>
+          <p className="text-gray-600 text-sm font-medium  leading-6 mb-6" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
+          <p className="text-gray-600 text-sm font-medium  leading-6" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
 
         </div>
-        <div className='mt-8 md:mt-0'>
+        <div className='mt-8 md:mt-0 rounded-md overflow-hidden' data-aos="fade-left">
           <Image
             src='/m.jpg'
             width={1920}
@@ -112,10 +112,10 @@ export default function AboutUs() {
 
       <section className='p-8 pb-14 md:px-24 w-full'>
         <div>
-          <h2 className="text-3xl font-extrabold  text-gray-700 ">Architectural  With People In Mind</h2>
-          <p className='text-gray-700 text-sm font-medium  py-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repudiandae?</p>
-          <p className="text-gray-600 text-sm font-medium  leading-6 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
-          <p className="text-gray-600 text-sm font-medium  leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
+          <h2 data-aos="fade-top">Architectural  With People In Mind</h2>
+          <p className='text-gray-700 text-sm font-medium  py-6' data-aos="fade-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repudiandae?</p>
+          <p className="text-gray-600 text-sm font-medium  leading-6 mb-6" data-aos="fade-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
+          <p className="text-gray-600 text-sm font-medium  leading-6" data-aos="fade-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
 
         </div>
 
