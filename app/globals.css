@@ -91,8 +91,8 @@ nav {
     height: 30px;
 }
 
-@media screen and (max-width:414px) {
+/* @media screen and (max-width:414px) {
     .hero {
         height: 65vh !important;
     }
-}
+} */
