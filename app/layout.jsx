@@ -8,7 +8,12 @@ import { usePathname } from 'next/navigation'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 import React from "react"
+import { Lato } from "next/font/google"
 
+const lato = Lato({
+  weight: ['300', '400'],
+  subsets: ['latin']
+})
 export default function RootLayout({ children }) {
   const path = usePathname()
 
@@ -21,7 +26,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className='scroll-smooth relative' id='top'>
-      <body className={`bg-white scroll-smooth`}>
+      <body className={`bg-white scroll-smooth ${lato.className}`}>
         {!path.toLocaleLowerCase().search('/admin') ?
           <>{children}</> :
           <>
