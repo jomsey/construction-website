@@ -48,7 +48,7 @@ nav {
 }
 
 .hero {
-    height: 75vh !important;
+    height: 80vh !important;
     min-height: 360px;
 }
 
@@ -90,9 +90,3 @@ nav {
     width: 30px;
     height: 30px;
 }
-
-/* @media screen and (max-width:414px) {
-    .hero {
-        height: 65vh !important;
-    }
-} */
