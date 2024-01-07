@@ -167,7 +167,7 @@ export default function Home() {
                             <GiTrowel className="text-6xl text-" />
                         </div>
                         <div>
-                            <h4 className="text-gray-600 font-bold my-3 text-xl">Construction</h4>
+                            <h3 className="text-gray-600 font-bold my-3 text-xl">Construction</h3>
                             <p className="text-sm text-gray-600">We are setting new standards for quality and ingenuity in the construction industry.</p>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ export default function Home() {
                             <GiBrickWall className="text-6xl text-" />
                         </div>
                         <div>
-                            <h4 className="text-gray-600 font-bold my-3 text-xl">Special Project</h4>
+                            <h3 className="text-gray-600 font-bold my-3 text-xl">Special Project</h3>
                             <p className="text-sm text-gray-600">Elevate your vision with our specialized project services.From conceptualization to execution.</p>
                         </div>
                     </div>
@@ -185,7 +185,7 @@ export default function Home() {
                             <GiThink className="text-6xl text-" />
                         </div>
                         <div>
-                            <h4 className="text-gray-600 font-bold my-3 text-xl">Consulting</h4>
+                            <h3 className="text-gray-600 font-bold my-3 text-xl">Consulting</h3>
                             <p className="text-sm text-gray-600">Our experienced personels offer strategic insights and guidance to optimize your construction.</p>
                         </div>
                     </div>
@@ -195,7 +195,7 @@ export default function Home() {
 
                         </div>
                         <div>
-                            <h4 className="text-gray-600 font-bold my-3 text-xl">Renovation</h4>
+                            <h3 className="text-gray-600 font-bold my-3 text-xl">Renovation</h3>
                             <p className="text-sm text-gray-600">Transform and revitalize spaces with our renovation expertise.We bring a frseh perspective to enhance functionality.</p>
                         </div>
                     </div>
@@ -204,7 +204,7 @@ export default function Home() {
                             <GiPencilRuler className="text-6xl text-" />
                         </div>
                         <div>
-                            <h4 className="text-gray-600 font-bold my-3 text-xl">Architecture</h4>
+                            <h3 className="text-gray-600 font-bold my-3 text-xl">Architecture</h3>
                             <p className="text-sm text-gray-600">Crafting visionary designs that blend creativity with functionality bringing life to your concepts, ensuring harmonious balance between form and balance</p>
                         </div>
                     </div>

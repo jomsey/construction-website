@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { GiBathtub, GiBed, GiDirectionSign, GiGps, GiKitchenKnives, GiResize } from 'react-icons/gi'
+import PhotosSwiper from '@/components/photo-swiper/swiper'
 
 export const metadata = {
    title: 'Build Africa | Our Projects',
@@ -24,7 +25,7 @@ export default function Projects() {
 
          <section className="grid gap-16 mb-12">
             <section className="grid md:grid-cols-2 px-8 sm:px-16 md:px-24  gap-10  ">
-               <div className='rounded overflow-hidden' data-aos="fade-up">
+               <div className='rounded overflow-hidden relative' data-aos="fade-up">
                   <Image
                      alt=".."
                      src="/h.jpg"
@@ -32,11 +33,13 @@ export default function Projects() {
                      height={853}
                      className="object-cover w-full h-full"
                   />
+                  <PhotosSwiper images={[{ url: "/am.jpg", width: "1000", height: "500" }, { url: "/c.jpg", width: "1000", height: "500" }, { url: "/a.jpg", width: "1000", height: "500" }]} />
+
                </div>
-               <div className="overflow-hidden">
+               <div className="overflow-hidden relative">
                   <h2 data-aos="fade-left">Lorem ipsum dolor sit amet.</h2>
                   <p className=' text-gray-600  leading-8 text-sm' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
-                  <p className='text-gray-600 leading-8 text-sm' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
+                  <p className='text-gray-600 leading-8 text-sm mt-8' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
 
                   <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4" data-aos="fade-up">
                      <div className="flex gap-2 text-gray-500 flex-col items-center border  p-3 rounded">
@@ -59,9 +62,10 @@ export default function Projects() {
                   <button className="border rounded-full border-green-500 text-gray-50 text-sm px-8 py-2 mt-8 bg-green-600" data-aos="fade-right">View Photo Slide</button>
                </div>
             </section>
+
 
             <section className="grid md:grid-cols-2 px-8 sm:px-16 md:px-24  gap-10  ">
-               <div className='rounded overflow-hidden' data-aos="fade-up">
+               <div className='rounded overflow-hidden relative' data-aos="fade-up">
                   <Image
                      alt=".."
                      src="/h.jpg"
@@ -69,11 +73,13 @@ export default function Projects() {
                      height={853}
                      className="object-cover w-full h-full"
                   />
+                  <PhotosSwiper images={[{ url: "/am.jpg", width: "1000", height: "500" }, { url: "/c.jpg", width: "1000", height: "500" }, { url: "/a.jpg", width: "1000", height: "500" }]} />
+
                </div>
-               <div className="overflow-hidden">
+               <div className="overflow-hidden relative">
                   <h2 data-aos="fade-left">Lorem ipsum dolor sit amet.</h2>
                   <p className=' text-gray-600  leading-8 text-sm' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
-                  <p className='text-gray-600 leading-8 text-sm' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
+                  <p className='text-gray-600 leading-8 text-sm mt-8' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
 
                   <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4" data-aos="fade-up">
                      <div className="flex gap-2 text-gray-500 flex-col items-center border  p-3 rounded">
@@ -96,9 +102,10 @@ export default function Projects() {
                   <button className="border rounded-full border-green-500 text-gray-50 text-sm px-8 py-2 mt-8 bg-green-600" data-aos="fade-right">View Photo Slide</button>
                </div>
             </section>
+
 
             <section className="grid md:grid-cols-2 px-8 sm:px-16 md:px-24  gap-10  ">
-               <div className='rounded overflow-hidden' data-aos="fade-up">
+               <div className='rounded overflow-hidden relative' data-aos="fade-up">
                   <Image
                      alt=".."
                      src="/h.jpg"
@@ -106,11 +113,13 @@ export default function Projects() {
                      height={853}
                      className="object-cover w-full h-full"
                   />
+                  <PhotosSwiper images={[{ url: "/am.jpg", width: "1000", height: "500" }, { url: "/c.jpg", width: "1000", height: "500" }, { url: "/a.jpg", width: "1000", height: "500" }]} />
+
                </div>
-               <div className="overflow-hidden">
+               <div className="overflow-hidden relative">
                   <h2 data-aos="fade-left">Lorem ipsum dolor sit amet.</h2>
                   <p className=' text-gray-600  leading-8 text-sm' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
-                  <p className='text-gray-600 leading-8 text-sm' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
+                  <p className='text-gray-600 leading-8 text-sm mt-8' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
 
                   <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4" data-aos="fade-up">
                      <div className="flex gap-2 text-gray-500 flex-col items-center border  p-3 rounded">
@@ -133,7 +142,6 @@ export default function Projects() {
                   <button className="border rounded-full border-green-500 text-gray-50 text-sm px-8 py-2 mt-8 bg-green-600" data-aos="fade-right">View Photo Slide</button>
                </div>
             </section>
-
 
 
          </section>
