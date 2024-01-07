@@ -43,7 +43,7 @@ export default function Home() {
 
             <section className="lg:grid grid-cols-2  lg:gap-8 lg:px-24 overflow-hidden">
                 <div className="px-8 sm:px-14 pb-14 md:px-0" >
-                    <h2 className="mt-14 text-green-500">We Are Leaders In Construction</h2>
+                    <h2 className="mt-14 ">We Are Leaders In Construction</h2>
                     <p className="text-gray-600  lg:w-3/4 leading-6 text-sm font-medium" data-aos="fade-up">Our portfolio extends beyond traditional building methods; we specialize in cutting-edge techniques, sustainable practices, and innovative solutions. Whether it's constructing state-of-the-art structures, managing complex renovations, or providing expert consultation, our team of skilled professionals is dedicated to delivering results that stand the test of time. With a focus on quality craftsmanship, attention to detail, and a client-centric approach, we are not just constructing buildings; we are shaping the future, one project at a time. Embrace a new era in construction with Build Africa, where our services go beyond construction – they pave the way for a better, more sustainable tomorrow.</p>
 
                     <div className="mt-12 flex flex-col gap-6 justify-evenly">
@@ -90,7 +90,7 @@ export default function Home() {
 
             <section className="w-full bg-gray-700 px-8 sm:px-16 py-14 lg:grid grid-cols-2 lg:px-24">
                 <div>
-                    <h2 className="text-white" data-aos="fade-up">Innovative Construction Solutions</h2>
+                    <h2 data-aos="fade-up">Innovative Construction Solutions</h2>
                     <p className="text-gray-400 text-sm font-medium lg:w-3/4 leading-6" data-aos="fade-up">The pride of Build Africa lies in delivering innovative solutions tailored to meet the unique demands of every project. Our commitment to pushing the boundaries of construction excellence is reflected in our approach to problem-solving and project execution. Whether faced with complex architectural challenges, tight timelines, or specific client requirements, our team thrives on creativity and adaptability.</p>
                     <div className="mt-8 w-60  grid grid-cols-2 gap-8" >
                         <div className="flex   flex-col" data-aos="fade-up">
@@ -158,7 +158,7 @@ export default function Home() {
 
             <section className="px-8 py-14 sm:p-14 lg:px-24">
                 <div className="flex flex-col items-center">
-                    <h2 className=" w-max text-green-500" id="services" data-aos="fade-up">Our Services</h2>
+                    <h2 className=" w-max " id="services" data-aos="fade-up">Our Services</h2>
                     <p className="text-sm text-gray-600  leading-8 w-full sm:w-3/4 text-center font-medium" data-aos="fade-up">Our services revolve around a client-centric approach, where we not only understand your immediate needs but also anticipate future trends and advancements. By integrating cutting-edge technologies, sustainable practices, and industry best practices, we ensure that each project benefits from our innovative mindset. </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  mt-16 " data-aos="fade-up">
@@ -177,7 +177,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-600 font-bold my-3 text-xl">Special Project</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-sm text-gray-600">Elevate your vision with our specialized project services.From conceptualization to execution.</p>
                         </div>
                     </div>
                     <div className="p-6 shadow-md border" data-aos="fade-up">
@@ -186,7 +186,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-600 font-bold my-3 text-xl">Consulting</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-sm text-gray-600">Our experienced personels offer strategic insights and guidance to optimize your construction.</p>
                         </div>
                     </div>
                     <div className="p-6 shadow-md border" data-aos="fade-up">
@@ -196,7 +196,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-600 font-bold my-3 text-xl">Renovation</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-sm text-gray-600">Transform and revitalize spaces with our renovation expertise.We bring a frseh perspective to enhance functionality.</p>
                         </div>
                     </div>
                     <div className="p-6 shadow-md border" data-aos="fade-up">
@@ -205,7 +205,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-600 font-bold my-3 text-xl">Architecture</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-sm text-gray-600">Crafting visionary designs that blend creativity with functionality bringing life to your concepts, ensuring harmonious balance between form and balance</p>
                         </div>
                     </div>
                     <div className="p-6 shadow-md border" data-aos="fade-up">
@@ -214,7 +214,7 @@ export default function Home() {
                         </div>
                         <div>
                             <h4 className="text-gray-600 font-bold my-3 text-xl">Interior Design</h4>
-                            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti verit</p>
+                            <p className="text-sm text-gray-600">We blend auethetics with practicality to create environments that resonate with your vision</p>
                         </div>
                     </div>
 
@@ -243,16 +243,16 @@ export default function Home() {
             <section className='bg-gray-700 grid-cols-1 grid sm:grid-cols-2  sm:gap-12 overflow-hidden '>
                 <Image
                     alt="..."
-                    src='/g.jpg'
-                    width={1000}
-                    height={500}
+                    src='/am.jpg'
+                    width={1280}
+                    height={853}
                     className="h-full w-full object-cover"
                     data-aos="fade-right"
 
                 />
 
                 <div className="sm:p-12 p-8" >
-                    <h2 className="text-white" data-aos="fade-left">Craftsmanship Beyond Compare</h2>
+                    <h2 data-aos="fade-left">Craftsmanship Beyond Compare</h2>
                     <p className="text-sm font-medium text-gray-400 mb-8 leading-8 " data-aos="fade-up">Discover craftsmanship that goes beyond industry standards. Our construction excellence is marked by attention to detail, quality materials, and a dedication to delivering structures that withstand the test of time. Explore how we elevate construction to an art form with precision and passion.</p>
                     <p className="text-sm font-medium text-gray-400  leading-8" data-aos="fade-up">We are not just constructing buildings; we are building tomorrow's landmarks. From residential marvels to commercial hubs, each structure is a testament to our commitment to excellence and forward-thinking design.</p>
                 </div>

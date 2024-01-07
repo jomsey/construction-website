@@ -23,7 +23,7 @@ export default function Contact() {
     }
     return (
         <>
-            <section className="bg-gray-700 px-8 sm:px-16 w-full py-12 md:flex gap-4 lg:gap-12 lg:px-24">
+            <section className="bg-gray-700 px-8 sm:px-16 w-full py-12 md:grid grid-cols-2 gap-4 lg:gap-12 lg:px-24">
                 <div className="overflow-hidden">
                     <h2 className="text-3xl font-extrabold  mb-10 text-white" data-aos="fade-right">Do You Have A Question?</h2>
                     <p className="text-sm text-gray-400 font-medium leading-8 sm:w-3/4" data-aos="fade-right">Ready to embark on a journey of architectural and construction excellence? Contact us to initiate a conversation about your project. Whether you have a clear vision or are seeking inspiration, our team is eager to collaborate and turn your ideas into tangible, awe-inspiring realities.</p>
@@ -67,7 +67,7 @@ export default function Contact() {
                 </div>
                 <div>
                     <h3 className="text-2xl font-bold md:mt-0 my-10 text-white " data-aos="fade-left">Get In Touch !!</h3>
-                    <p className="text-sm text-gray-400 font-medium leading-8" data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam, deleniti vel commodi quisquam quia aliquam aut incidunt natus, architecto harum eaq</p>
+                    <p className="text-sm text-gray-400 font-medium leading-8" data-aos="fade-up">Feel free to reach outto us for any inquiries or to discuss your poject further.We look forard to collaborate with you </p>
                     <form onSubmit={handleFormSubmit} className="mt-8 flex flex-col gap-5" method="POST">
                         <div className='flex flex-col gap-5 sm:flex-row'>
                             <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Name" name="name" type="text" data-aos="fade-up" />
@@ -83,7 +83,7 @@ export default function Contact() {
             <section className="w-full px-8 sm:px-16 py-6 bg-gray-700 sm:flex gap-12 border-t border-b border-gray-500 lg:px-24">
                 <div className="sm:w-1/2">
                     <h4 className="text-green-500 font-extrabold text-xl">Subscribe To Our News Letter</h4>
-                    <p className="text-sm mt-4 text-gray-400 font-medium  leading-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit accusamus ipsa tempore debitis magnam.</p>
+                    <p className="text-sm mt-4 text-gray-400 font-medium  leading-8">Stay updated wit our latest projects, industry isights and exclusive offers by subscribing to our newsleter.</p>
                 </div>
                 <form className="mt-4 flex flex-col sm:flex-row h-max relative sm:w-1/2 sm:top-8">
                     <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Email" type="email" />
