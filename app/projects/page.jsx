@@ -20,7 +20,10 @@ export default function Projects() {
 
          </section>
          <section className='flex justify-center items-center my-12'>
-            <p className='w-3/4 sm:w-1/2 border-double border-spacing-4 border-l-2 py-6 text-gray-600 pl-8 leading-8 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
+            <p className='w-3/4 sm:w-1/2 border-double border-spacing-4 border-l-2 py-6 font-bold text-gray-600 pl-8 leading-8 text-sm'>Each of our projects at Build Africa represents a unique chapter in our
+               journey, showcasing our passion for construction and our commitment to
+               creating spaces that make a positive impact on the lives of those who inhabit
+               them.</p>
          </section>
 
          <section className="grid gap-16 mb-12">
@@ -37,9 +40,13 @@ export default function Projects() {
 
                </div>
                <div className="overflow-hidden relative">
-                  <h2 data-aos="fade-left">Lorem ipsum dolor sit amet.</h2>
-                  <p className=' text-gray-600  leading-8 text-sm' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
-                  <p className='text-gray-600 leading-8 text-sm mt-8' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
+                  <h2 data-aos="fade-left">Urban Oasis Residences</h2>
+                  <p className=' text-gray-600  leading-8 text-sm' data-aos="fade-left"> Nestled in the heart of the city, Urban Oasis Residences is a hallmark of
+                     sophisticated living. These architecturally stunning residential complexes
+                     offer more than just homes; they provide a lifestyle. With meticulous
+                     attention to detail and contemporary design, each unit is a sanctuary
+                     where comfort and aesthetics seamlessly blend. Discover a harmonious blend
+                     of elegance and functionality in every corner of Urban Oasis Residences.</p>
 
                   <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4" data-aos="fade-up">
                      <div className="flex gap-2 text-gray-500 flex-col items-center border  p-3 rounded">
@@ -68,7 +75,7 @@ export default function Projects() {
                <div className='rounded overflow-hidden relative' data-aos="fade-up">
                   <Image
                      alt=".."
-                     src="/h.jpg"
+                     src="/as.jpg"
                      width={1280}
                      height={853}
                      className="object-cover w-full h-full"
@@ -77,9 +84,13 @@ export default function Projects() {
 
                </div>
                <div className="overflow-hidden relative">
-                  <h2 data-aos="fade-left">Lorem ipsum dolor sit amet.</h2>
-                  <p className=' text-gray-600  leading-8 text-sm' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
-                  <p className='text-gray-600 leading-8 text-sm mt-8' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
+                  <h2 data-aos="fade-left">Commerce Hub Tower</h2>
+                  <p className=' text-gray-600  leading-8 text-sm' data-aos="fade-left"> Commerce Hub Tower stands tall as a beacon of innovation in the commercial
+                     landscape. This cutting-edge development redefines workspaces, offering
+                     state-of-the-art offices that inspire productivity and growth. The tower's
+                     striking design is a visual representation of our commitment to creating
+                     environments that foster success. Explore the dynamic spaces within
+                     Commerce Hub Tower and witness a new era of corporate excellence.</p>
 
                   <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4" data-aos="fade-up">
                      <div className="flex gap-2 text-gray-500 flex-col items-center border  p-3 rounded">
@@ -108,7 +119,7 @@ export default function Projects() {
                <div className='rounded overflow-hidden relative' data-aos="fade-up">
                   <Image
                      alt=".."
-                     src="/h.jpg"
+                     src="/f.jpg"
                      width={1280}
                      height={853}
                      className="object-cover w-full h-full"
@@ -117,9 +128,14 @@ export default function Projects() {
 
                </div>
                <div className="overflow-hidden relative">
-                  <h2 data-aos="fade-left">Lorem ipsum dolor sit amet.</h2>
-                  <p className=' text-gray-600  leading-8 text-sm' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
-                  <p className='text-gray-600 leading-8 text-sm mt-8' data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam libero deserunt ad sunt eveniet quibusdam neque et possimus ipsum iure recusandae quia animi repellat hic, voluptatibus facilis iste nam.</p>
+                  <h2 data-aos="fade-left">EcoVillage Sustainable Living</h2>
+                  <p className=' text-gray-600  leading-8 text-sm' data-aos="fade-left">EcoVillage is more than just a residential development; it's a commitment
+                     to sustainable living. Nestled in a lush green landscape, this project
+                     combines eco-friendly architecture with modern amenities. From
+                     energy-efficient designs to green spaces that promote well-being,
+                     EcoVillage exemplifies our dedication to creating communities that thrive
+                     in harmony with nature. Explore a lifestyle where sustainability and
+                     comfort coexist seamlessly.</p>
 
                   <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4" data-aos="fade-up">
                      <div className="flex gap-2 text-gray-500 flex-col items-center border  p-3 rounded">

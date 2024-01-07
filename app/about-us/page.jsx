@@ -42,8 +42,15 @@ export default function AboutUs() {
 
           <div>
             <h2 className="mt-14" data-aos="fade-top">The Architectural <br></br> Language</h2>
-            <p className="text-gray-600 text-sm font-medium  leading-6 my-8" data-aos="fade-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
-            <p className="text-gray-600 text-sm font-medium  leading-6" data-aos="fade-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam maxime, adipisci rerum illum consequatur repellat? Aspernatur maxime voluptates voluptatem impedit. Repudiandae asperiores quia porro mollitia.</p>
+            <p className="text-gray-600 text-sm font-medium  leading-6 my-8" data-aos="fade-up">Build Africa is more than just a construction company; it's a vision brought
+              to life. Our journey began with a commitment to redefine infrastructure in
+              Africa, and today, we stand as a symbol of innovation and reliability in the
+              construction industry.</p>
+            <p className="text-gray-600 text-sm font-medium  leading-6" data-aos="fade-top">At Build Africa, our mission goes beyond erecting structures; it's about
+              building communities and fostering sustainable development. With a team of
+              dedicated professionals, we bring a wealth of experience and expertise to
+              every project, ensuring excellence in execution and a lasting impact on the
+              landscapes we shape.</p>
           </div>
         </div>
 

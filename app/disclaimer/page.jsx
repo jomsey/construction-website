@@ -10,23 +10,39 @@ export default function Disclaimer() {
       <section className="p-12 md:p-24 flex flex-col justify-center items-center gap-8">
         <div>
           <h2 className="text-bold text-xl text-gray-900">Content Accuracy</h2>
-          <p className="text-sm font-medium leading-8 mt-5 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, sapiente magnam laboriosam vel recusandae repudiandae quae repellat tempora! Ipsam saepe illum laborum dolor, aperiam sit cupiditate mollitia, architecto quasi a nostrum impedit tempora quam minus nemo magni facere repellat et maxime beatae iste. Mollitia commodi sed corrupti vitae repellat autem.</p>
+          <p className="text-sm font-medium leading-8 mt-5 text-gray-600">While we make every effort to ensure the accuracy of the information provided
+            on our website, we do not guarantee the completeness, timeliness, or accuracy
+            of the content. The information is provided for general informational purposes
+            only and should not be considered professional advice.</p>
         </div>
         <div>
           <h2 className="text-bold text-xl text-gray-900">External Links</h2>
-          <p className="text-sm font-medium leading-8 mt-5 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, sapiente magnam laboriosam vel recusandae repudiandae quae repellat tempora! Ipsam saepe illum laborum dolor, aperiam sit cupiditate mollitia, architecto quasi a nostrum impedit tempora quam minus nemo magni facere repellat et maxime beatae iste. Mollitia commodi sed corrupti vitae repellat autem.</p>
+          <p className="text-sm font-medium leading-8 mt-5 text-gray-600">Our website may contain links to external websites for additional information
+            or resources. These links are provided for your convenience, and we do not
+            endorse the content or take responsibility for the accuracy of information on
+            these external sites. Visiting external links is at your own risk.</p>
         </div>
         <div>
           <h2 className="text-bold text-xl text-gray-800">Use of Information</h2>
-          <p className="text-sm font-medium leading-8 mt-5 text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, sapiente magnam laboriosam vel recusandae repudiandae quae repellat tempora! Ipsam saepe illum laborum dolor, aperiam sit cupiditate mollitia, architecto quasi a nostrum impedit tempora quam minus nemo magni facere repellat et maxime beatae iste. Mollitia commodi sed corrupti vitae repellat autem.</p>
+          <p className="text-sm font-medium leading-8 mt-5 text-gray-700">The content on our website is intended for general information purposes and
+            should not be construed as professional advice or services. Any reliance on
+            the information provided is at your own discretion. We recommend seeking
+            professional advice relevant to your specific circumstances.</p>
         </div>
         <div>
           <h2 className="text-bold text-xl text-gray-800">Technical Issues</h2>
-          <p className="text-sm font-medium leading-8 mt-5 text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, sapiente magnam laboriosam vel recusandae repudiandae quae repellat tempora! Ipsam saepe illum laborum dolor, aperiam sit cupiditate mollitia, architecto quasi a nostrum impedit tempora quam minus nemo magni facere repellat et maxime beatae iste. Mollitia commodi sed corrupti vitae repellat autem.</p>
+          <p className="text-sm font-medium leading-8 mt-5 text-gray-700"> We strive to maintain the availability and functionality of our website.
+            However, we are not responsible for any disruptions, technical issues, or
+            temporary unavailability of the site. We reserve the right to suspend, modify,
+            or discontinue our services at any time.</p>
         </div>
         <div>
           <h2 className="text-bold text-xl text-gray-800">Changes to Disclaimer</h2>
-          <p className="text-sm font-medium leading-8 mt-5 text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, sapiente magnam laboriosam vel recusandae repudiandae quae repellat tempora! Ipsam saepe illum laborum dolor, aperiam sit cupiditate mollitia, architecto quasi a nostrum impedit tempora quam minus nemo magni facere repellat et maxime beatae iste. Mollitia commodi sed corrupti vitae repellat autem.</p>
+          <p className="text-sm font-medium leading-8 mt-5 text-gray-700">We reserve the right to update, modify, or replace this disclaimer without
+            prior notice. Any changes will be effective immediately upon posting. It is
+            your responsibility to review this page periodically for updates. Continued
+            use of our services after modifications constitutes acceptance of the updated
+            disclaimer.</p>
         </div>
       </section>
     </main>
