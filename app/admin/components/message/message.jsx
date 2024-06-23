@@ -1,23 +1,46 @@
-import Loader from 'feather-icons-react/build/IconComponents/Loader'
-import Link from 'next/link'
+"use client"
 import React from 'react'
+import { GiCheckMark } from 'react-icons/gi'
+import { useRouter } from 'next/navigation'
+import { Circle } from 'feather-icons-react/build/IconComponents'
+import Loader from 'feather-icons-react/build/IconComponents/Loader'
 
-export default function MessageCard({ badgeColor, message, dateCreated, sentBy }) {
-    const badgeColors = ["blue-500", "red-600", "red-600"]
+
+export default function MessageCard({ message, dateCreated, sentBy, selectTriggered = false, id = 1, messageDeleting = false }) {
+    const [messageSelected, setMessageSelected] = React.useState(false)
+    const { push } = useRouter()
+
+    const handleMessageClick = (messageId) => {
+        if (!selectTriggered) {
+            //redirect to message detail page
+            push(`messages/${messageId}`)
+        }
+        else {
+            messageSelected ? setMessageSelected(false) : setMessageSelected(true)
+            //update selected messages list
+        }
+
+    }
 
     return (
-        <Link href="/admin/messages/3">
-            <div className='bg-white shadow-md rounded-lg p-4 relative overflow-hidden cursor-pointer'>
-                <div className='flex items-end gap-5 border-b pb-2 relative'>
-                    <small className='text-gray-400 absolute top-0 right-3'>{dateCreated}</small>
-                    <span className={`rounded-full p-3 w-8 h-8 ${'bg-' + badgeColors[0]}  text-white flex items-center justify-center font-bold text-2xl`}>{sentBy.toUpperCase()[0]}</span>
-                    <span className="text-gay-700 text-sm font-semibold">John Doe</span>
-                </div>
-                <div>
-                    <p className='text-sm text-gray-600 my-4'>{message.length <= 80 ? message : message.slice(0, 81).concat(' ...')}</p>
-                </div>
+        <div className='bg-white shadow-md rounded-lg p-4 relative overflow-hidden cursor-pointer' onClick={() => handleMessageClick(id)}>
+            {selectTriggered &&
+                !messageDeleting &&
+                <div className="absolute right-5 top-5  text-green-600 border w-max z-10 mb-8 " >
+                    <Circle className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                    {messageSelected && <GiCheckMark className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm" />}
+                </div>}
+            <div className='flex items-end gap-5 border-b pb-2 relative select-none'>
+                <small className='text-gray-400 absolute top-3 right-3'>{dateCreated}</small>
+                <span className={`rounded-full p-3 w-8 h-8 bg-blue-400  text-white flex items-center justify-center font-bold text-2xl`}>{sentBy.toUpperCase()[0]}</span>
+                <span className="text-gray-700 text-sm font-semibold">John Doe</span>
             </div>
-        </Link>
+            <div>
+                <p className='text-sm text-gray-600 my-4'>{message.length <= 80 ? message : message.slice(0, 81).concat(' ...')}</p>
+            </div>
+            {messageSelected && messageDeleting && <MessageDeleteOverlay />}
+        </div>
+
     )
 }
 

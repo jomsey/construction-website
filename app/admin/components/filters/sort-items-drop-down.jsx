@@ -1,18 +1,22 @@
 'use client'
 import React from 'react'
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa'
 
 
 export default function ({ sortByList }) {
-    const [selected, setSelected] = React.useState(sortByList[0].title || "empty list")
+    const { replace } = useRouter()
+    const pathName = usePathname()
+    const searchParams = useSearchParams()
     const [dropDownVisible, setDropDownVisible] = React.useState(false)
-    const router = useRouter()
-    const path = usePathname()
+    const selectedItemFromUrl = sortByList.filter(i => i.title.toLowerCase() === searchParams.get('sort_by'))
+    const [selected, setSelected] = React.useState(selectedItemFromUrl[0]?.title || sortByList[0]?.title)
 
-    const handleItemSelected = (item) => {
-        router.push(`${path}?sort_by=${item.title.toLowerCase()}`)
-        setSelected(item.title)
+    const handleItemSelected = ({ title }) => {
+        const params = new URLSearchParams(searchParams)
+        title ? params.set("sort_by", title.toLowerCase()) : params.delete("sort_by")
+        replace(`${pathName}?${params.toString()}`)
+        setSelected(title)
         setDropDownVisible(false)
     }
 

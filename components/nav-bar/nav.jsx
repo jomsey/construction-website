@@ -1,13 +1,14 @@
 'use client'
-import Link from 'next/link'
 import { Menu, X } from 'feather-icons-react/build/IconComponents'
 import { useRef } from 'react'
 import NavLink from '../nav-link/nav-link'
+import { useSession } from 'next-auth/react'
 
 
 export default function Nav() {
 
   const navList = useRef(null)
+  const { status } = useSession()
 
   const handleMobileMenuOpen = () => {
     navList.current.classList.remove('w-0')
@@ -28,7 +29,7 @@ export default function Nav() {
       </div>
       <div>
 
-        <div ref={navList} className="fixed w-0 h-full transition-all ease-linear duration-300  overflow-hidden top-0 left-0 bg-gray-700 md:bg-white z-50 pt-0 md:pt-0 md:h-auto md:w-auto md:static   ">
+        <div ref={navList} className="fixed w-0 h-full transition-all ease-linear duration-300  overflow-hidden top-0 left-0 bg-gray-700 md:bg-gray-50 z-50 pt-0 md:pt-0 md:h-auto md:w-auto md:static   ">
 
           <div className='text-green-400 cursor-pointer m-auto w-min  mt-6 mb-8 md:hidden' onClick={handleMobileMenuClose}>
             {/* this is a close menu button */}
@@ -40,7 +41,9 @@ export default function Nav() {
             <NavLink path='/about-us'>About Us</NavLink>
             <NavLink path='/contact-us'>Contact</NavLink>
             <NavLink path='/#services'>Services</NavLink>
-            {/* <NavLink path='/admin'>DashBoard</NavLink> */}
+            {status == "authenticated" && <NavLink path='/admin'>DashBoard</NavLink>}
+            {status == "authenticated" && <NavLink path='/api/auth/signout'>Logout</NavLink>}
+
           </ul>
         </div>
         <div className='text-green-400 cursor-pointer mb-4 md:hidden' onClick={handleMobileMenuOpen} >

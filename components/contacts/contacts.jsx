@@ -12,7 +12,7 @@ export default function Contact() {
             body: {
                 name: formData.get("name"),
                 phone: formData.get("phone"),
-                email: formData.get("emmail"),
+                email: formData.get("email"),
                 message: formData.get("message")
             }
         })
@@ -44,7 +44,7 @@ export default function Contact() {
                             </div>
                             <div >
                                 <small className="text-green-500 font-bold block">Facebook</small>
-                                <small className="text-gray-200 mt-1 block">simo</small>
+                                <small className="text-gray-200 mt-1 block">buildafrica</small>
                             </div>
                         </div><div className="flex gap-2" data-aos="fade-right">
                             <div className=" border border-white w-11 h-11 flex justify-center items-center text-white">
@@ -52,7 +52,7 @@ export default function Contact() {
                             </div>
                             <div >
                                 <small className="text-green-500 font-bold block">Twitter</small>
-                                <small className="text-gray-200 mt-1 block">simo</small>
+                                <small className="text-gray-200 mt-1 block">buildafrica</small>
                             </div>
                         </div><div className="flex gap-2" data-aos="fade-right">
                             <div className=" border border-white w-11 h-11 flex justify-center items-center text-white">
@@ -60,14 +60,14 @@ export default function Contact() {
                             </div>
                             <div >
                                 <small className="text-green-500 font-bold block">LinkedIn</small>
-                                <small className="text-gray-200 mt-1 block">simo</small>
+                                <small className="text-gray-200 mt-1 block">buildafrica</small>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
                     <h3 className="text-2xl font-bold md:mt-0 my-10 text-white " data-aos="fade-left">Get In Touch !!</h3>
-                    <p className="text-sm text-gray-400 font-medium leading-8" data-aos="fade-up">Feel free to reach outto us for any inquiries or to discuss your poject further.We look forard to collaborate with you </p>
+                    <p className="text-sm text-gray-400 font-medium leading-8" data-aos="fade-up">Feel free to reach out to us for any inquiries or to discuss your poject further.We look forard to collaborate with you </p>
                     <form onSubmit={handleFormSubmit} className="mt-8 flex flex-col gap-5" method="POST">
                         <div className='flex flex-col gap-5 sm:flex-row'>
                             <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Name" name="name" type="text" data-aos="fade-up" />
