@@ -1,25 +1,45 @@
+"use client"
 import { Facebook, Twitter, Linkedin, Phone } from 'feather-icons-react/build/IconComponents'
+import React from "react"
 
 
 export default function Contact() {
-    async function handleFormSubmit(event) {
+    const [message,setMessage] = React.useState(null);
+
+    const handleContactFormSubmit=async(event)=> {
         event.preventDefault()
-
+        setMessage(null) //clear available message
         const formData = new FormData(event.currentTarget)
-
         const response = await fetch('/api/contact', {
             method: "POST",
-            body: {
+            body: JSON.stringify({
                 name: formData.get("name"),
                 phone: formData.get("phone"),
                 email: formData.get("email"),
                 message: formData.get("message")
-            }
+            })
         })
+    
+         if(response.status === 201)setMessage({message:"Message has been sent successfully",success:true});
+         if(response.status === 400)setMessage({message:"Message couldn't be sent , check fields for valid data",success:false})
+         if(response.status === 500){setMessage({message:"Oops , something is wrong",success:false})}
+    }
 
-        // const data = await response.json()
+    const handleSubscribeFormSubmit = async(event)=>{
+        event.preventDefault()
+        const formData =  new FormData(event.currentTarget)
 
+        setMessage(null) //clear available message
 
+        const response = await fetch('/api/subscribe', {
+            method: "POST",
+            body: JSON.stringify({
+                email: formData.get("email"),
+            })     
+        })
+        if(response.status === 201)setMessage({_message:"Submitted successfully",success:true});
+        if(response.status === 400)setMessage({_message:"Submission failed , check fields for valid data",success:false})
+        if(response.status === 500){setMessage({_message:"Oops , something is wrong",success:false})}
     }
     return (
         <>
@@ -67,15 +87,16 @@ export default function Contact() {
                 </div>
                 <div>
                     <h3 className="text-2xl font-bold md:mt-0 my-10 text-white " data-aos="fade-left">Get In Touch !!</h3>
-                    <p className="text-sm text-gray-400 font-medium leading-8" data-aos="fade-up">Feel free to reach out to us for any inquiries or to discuss your poject further.We look forard to collaborate with you </p>
-                    <form onSubmit={handleFormSubmit} className="mt-8 flex flex-col gap-5" method="POST">
+                    <p className="text-sm text-gray-400 font-medium leading-8" data-aos="fade-up">Feel free to reach out to us for any inquiries or to discuss your project further.We look forard to collaborate with you </p>
+                    <form onSubmit={handleContactFormSubmit} className="mt-8 flex flex-col gap-5" method="POST">
+                        {message && <small className={`text-xs ${!message.success?"text-red-500":"text-green-500"} font-medium`}>{message.message}</small>}
                         <div className='flex flex-col gap-5 sm:flex-row'>
-                            <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Name" name="name" type="text" data-aos="fade-up" />
-                            <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Phone" name="phone" type="phone" data-aos="fade-up" />
+                            <input className="p-3 text-sm focus:outline-0 focus:border-green-500 text-gray-600 sm:w-full" placeholder="Name" name="name" type="text" data-aos="fade-up" />
+                            <input className="p-3 text-sm focus:outline-0 focus:border-green-500 text-gray-600 sm:w-full" placeholder="Phone" name="phone" type="phone" data-aos="fade-up" />
                         </div>
-                        <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Email" name="email" type="email" data-aos="fade-up" />
-                        <textarea className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder=" Message" name="email" data-aos="fade-up"></textarea>
-                        <button className="bg-green-500 text-white px-6 py-3 text-base font-semibold w-max" type="submit" data-aos="fade-up">Send</button>
+                        <input className="p-3 text-sm focus:outline-0 focus:border-green-500 text-gray-600 sm:w-full" placeholder="Email" name="email" type="email" data-aos="fade-up" />
+                        <textarea className="p-3 text-sm focus:outline-0 focus:border-green-500 text-gray-600 sm:w-full" placeholder=" Message" name="message" data-aos="fade-up"></textarea>
+                        <button className="bg-green-500 text-white px-6 py-3 text-base font-semibold w-max" type="submit" >Send</button>
                     </form>
                 </div>
             </section>
@@ -83,12 +104,15 @@ export default function Contact() {
             <section className="w-full px-8 sm:px-16 py-6 bg-gray-700 sm:flex gap-12 border-t border-b border-gray-500 lg:px-24">
                 <div className="sm:w-1/2">
                     <h4 className="text-green-500 font-extrabold text-xl">Subscribe To Our News Letter</h4>
-                    <p className="text-sm mt-4 text-gray-400 font-medium  leading-8">Stay updated wit our latest projects, industry isights and exclusive offers by subscribing to our newsleter.</p>
+                    <p className="text-sm mt-4 text-gray-400 font-medium  leading-8">Stay updated wit our latest projects, industry insights and exclusive offers by subscribing to our newsleter.</p>
                 </div>
-                <form className="mt-4 flex flex-col sm:flex-row h-max relative sm:w-1/2 sm:top-8">
-                    <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full" placeholder="Email" type="email" />
-                    <button className="bg-green-500 text-white p-3 text-sm font-bold sm:w-1/2" type="submit">Subscribe</button>
+                <div className="mt-4  sm:w-1/2 sm:top-8">
+                    {message && message._message && <small className={`text-xs mb-4 ${!message.success?"text-red-500":"text-green-500"} font-medium`}>{message._message}</small>}
+                <form className="flex flex-col sm:flex-row h-max relative w-full" onSubmit={handleSubscribeFormSubmit}>
+                    <input className="p-3 text-sm focus:outline-0 text-gray-600 sm:w-full focus:border-green-500" placeholder="Email" type="email" />
+                    <button className="bg-green-500 text-white p-3 text-sm font-bold sm:w-1/2 "  type="submit">Subscribe</button>
                 </form>
+                </div>
             </section>
         </>
     );

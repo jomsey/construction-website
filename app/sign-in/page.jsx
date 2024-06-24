@@ -6,7 +6,7 @@ export default function Login() {
 
             <div className='flex justify-center items-center gap-10 flex-col sm:w-1/2 sm:p-16 p-8 pt-12'>
                 <h1 className='text-center font-bold text-2xl text-white'>Sign-In</h1>
-                <div className='w-full flex flex-col gap-8'>
+                <div className='w-full flex flex-col gap-8 border'>
                     <form action="" className='flex flex-col gap-8'>
                         <input type="text" placeholder="username" className='outline-none p-2 sm:p-4 text-sm text-gray-500 rounded-sm' />
                         <input type="password" placeholder="password" className='outline-none p-2 sm:p-4 text-sm text-gray-500' />

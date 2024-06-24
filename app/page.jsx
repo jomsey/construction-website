@@ -81,7 +81,6 @@ export default function Home() {
                             <span className="font-bold text-sm text-gray-700">Home Designs that Reflect Your Lifestyle</span>
                         </div>
                     </div>
-
                 </div>
 
                 <div className="relative " data-aos="fade-left">

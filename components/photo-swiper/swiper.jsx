@@ -10,7 +10,7 @@ export default function PhotosSwiper({ images = [] }) {
                 <section className="grid grid-cols-3  gap-4  ">
                     {images.map(i => (
                         <Item original={i.url} thumbnail={i.url} width={i.width} height={i.height} >
-                            {({ ref, open }) => (<Image alt=".." width={i.width} height={i.height} ref={ref} id={i.url} onClick={open} src={i.url} className="rounded-md border-white border-4" />)}
+                            {({ ref, open }) => (<Image alt=".." width={i.width} height={i.height} ref={ref} id={i.url} onClick={open} src={i.url} className="rounded-md border-white hover:border-green-400  border-4 cursor-pointer" />)}
                         </Item>
                     ))}
                 </section>

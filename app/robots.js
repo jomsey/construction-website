@@ -3,7 +3,7 @@ export default function robots() {
         rules: {
             userAgent: "*",
             allow: '/',
-            disallow: '/adim',
+            disallow: '/admin',
         },
         sitemap: 'https://domain.com'
     }
