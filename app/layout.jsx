@@ -10,6 +10,7 @@ import { SessionProvider } from 'next-auth/react'
 import Footer from '@/components/footer/footer'
 import Back2top from '@/components/back-to-top-button/b2top'
 import Contact from '@/components/contacts/contacts'
+import WebVitals from '@/components/web-vitals/web-vitals'
 
 const lato = Lato({
   weight: ['300', '400'],
@@ -25,7 +26,6 @@ const roboto = Roboto({
 
 export default function RootLayout({ children }) {
   const path = usePathname()
-
   React.useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -35,6 +35,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className='scroll-smooth relative' id='top'>
+      <WebVitals/>
       <body className={`bg-gray-50 overflow-x-hidden scroll-smooth  ${lato.className}`}>
         <SessionProvider>
           {!path.toLocaleLowerCase().search('/admin') ?

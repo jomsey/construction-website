@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
     max-width: 1600px;
     min-width: 300px;
@@ -9,13 +8,11 @@ body {
     overflow-x: hidden;
 }
 
-
 section {
     overflow: hidden;
 }
 
 @layer base {
-
     h1,
     h2,
     h3,
@@ -23,13 +20,10 @@ section {
     h5,
     h6 {
         @apply font-roboto leading-10;
-
     }
-
     h2 {
         letter-spacing: 2px;
-        @apply text-3xl font-extrabold mb-10 lg:w-3/4 text-green-500;
-
+        @apply text-3xl font-extrabold mb-10 text-green-500;
     }
 }
 

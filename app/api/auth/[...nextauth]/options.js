@@ -1,8 +1,14 @@
-import CredentialProvider from "next-auth/providers/credentials"
+import CredentialProvider from "next-auth/providers/credentials";
+import Google from "next-auth/providers/google";
 
 
 export const options = {
     providers: [
+        Google({
+            clientId:process.env.GOOGLE_ID,
+            clientSecret:process.env.GOOGLE_CLIENT_SECRET
+        }),
+        
         CredentialProvider({
             name: "Credentials",
             credentials: {
@@ -34,7 +40,7 @@ export const options = {
 
     ],
 
-    pages: [
-        '/admin'
-    ]
+    pages: {
+        signIn:"/sign-in"
+    }
 }

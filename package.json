@@ -20,7 +20,8 @@
         "react-icons": "^4.12.0",
         "react-photoswipe-gallery": "^3.0.1",
         "sharp": "^0.33.1",
-        "zod": "^3.22.4"
+        "zod": "^3.22.4",
+        "@prisma/client": "^5.16.1"
     },
     "devDependencies": {
         "autoprefixer": "^10",

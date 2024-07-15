@@ -1,7 +1,7 @@
 import NavLink from "@/components/nav-link/nav-link";
 import Link from "next/link";
 import { FaAddressCard, FaHome, FaLock, FaQuestion } from "react-icons/fa";
-import { GiCalendar, GiEnvelope, GiHouse, GiCarWheel, GiEarthAfricaEurope, GiNewspaper, GiPerson } from 'react-icons/gi'
+import { GiCalendar, GiEnvelope, GiHouse } from 'react-icons/gi'
 import User from "./components/account-user/user";
 import { FaGears, FaNewspaper } from "react-icons/fa6";
 
@@ -9,10 +9,11 @@ export const metadata = {
     title: 'Admin Dashboard',
     themeColor: '#000'
 }
+
 export default function AdminLayOut({ children }) {
 
     return (
-        <main className="grid md:grid-cols-12  w-full  bg-gray-100 relative">
+        <main className="grid md:grid-cols-12  w-full  bg-gray-100 relative ">
             <div className="">
                 <aside className=" sm:col-start-1 sm:col-end-3 bg-gray-700  border-r border-gray-500 overflow-hidden fixed w-0 sm:w-2/12 h-full  row-span-6 z-50 top-0 left-0">
                     <h1 className="text-center text-green-500  py-4 font-bold">BUILD AFRICA</h1>
@@ -37,17 +38,18 @@ export default function AdminLayOut({ children }) {
 
             <main className="col-start-3  col-end-13 row-span-6 relative pb-12 h-full">
                 <header className="  bg-gray-700 flex gap-12 items-center justify-end px-10 py-2">
-                    <div className=" text-gray-100 text-sm place-self-end">
-                        <Link href="/"><span className="cursor-pointer hover:text-green-400 ease-in duration-200 ">View Site</span></Link>
+                    <div className=" place-self-end">
+                        <Link href="/" className=" text-gray-500 text-sm"><span className="cursor-pointer hover:text-green-400 ease-in duration-200 ">View Site</span></Link>
                     </div>
                     <User />
                 </header>
                 <main>
                     {children}
                 </main>
-                <footer className="bg-gray-700 absolute bottom-0 left-0 right-0 py-4 ">
-                    <small className='text-white text-center block  font-bold '>&copy; {new Date().getFullYear()} Build Africa</small>
-                </footer>
+                
             </main>
+            <footer className="bg-gray-700 absolute bottom-0 left-0 right-0 py-4 ">
+                    <small className='text-gray-400 text-center block  text-xs '>&copy; {new Date().getFullYear()} Build Africa</small>
+                </footer>
         </main>);
 }

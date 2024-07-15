@@ -27,6 +27,10 @@ export const metadata = {
 
 }
 
+export const viewport ={
+    themeColor:"#334155"
+}
+
 export default function Home() {
     return (
         <main>
@@ -37,6 +41,7 @@ export default function Home() {
                     height={1280}
                     className="object-cover w-full h-full"
                     alt="..."
+                    priority={false}
 
                 />
                 <div className="w-full h-full overlay absolute left-0 top-0  flex  flex-col justify-end">
