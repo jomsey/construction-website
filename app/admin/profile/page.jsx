@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Profilee() {
+export default function Profile() {
     return (
         <main className='grid md:grid-cols-3  w-full h-full p-10'>
             <section>

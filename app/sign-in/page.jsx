@@ -2,7 +2,7 @@ import { getProviders} from 'next-auth/react';
 import GoogleSignInButton from '@/components/sign-in-with-google/button';
 
 export default async function Login() {
-    const {google} = await getProviders()
+    const providers = await getProviders()
 
     return (
         <main className='bg-gray-700   flex justify-center items-center gap-10 flex-col relative border-b border-slate-400 pb-8'>
@@ -14,7 +14,7 @@ export default async function Login() {
                         <input type="password" placeholder="password" className='outline-none p-2 sm:p-4 text-sm text-green-400  border border-green-500 rounded bg-transparent' />
                         <button type="submit" className='py-2 sm:py-4 px-8 bg-green-500 text-center text-gray-50 font-semibold rounded'>Sign-In</button>
                     </form>
-                    <GoogleSignInButton providerId={google.id}/>
+                    <GoogleSignInButton providerId={providers.google.id}/>
                 <p className='text-sm text-white font-semibold'>Can't remember password ? <span className='text-green-500 cursor-pointer hover:text-green-400 transition-colors ease-in duration-300'>Reset password.</span></p>
                 </div>
             </div>

@@ -39,7 +39,7 @@ export default function AdminLayOut({ children }) {
             <main className="col-start-3  col-end-13 row-span-6 relative pb-12 h-full">
                 <header className="  bg-gray-700 flex gap-12 items-center justify-end px-10 py-2">
                     <div className=" place-self-end">
-                        <Link href="/" className=" text-gray-500 text-sm"><span className="cursor-pointer hover:text-green-400 ease-in duration-200 ">View Site</span></Link>
+                        <Link href="/" className=" text-gray-400 text-sm"><span className="cursor-pointer hover:text-green-400 ease-in duration-100 ">View Site</span></Link>
                     </div>
                     <User />
                 </header>
