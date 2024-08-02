@@ -41,6 +41,7 @@ export default function Nav() {
             <NavLink path='/about-us'>About Us</NavLink>
             <NavLink path='/contact-us'>Contact</NavLink>
             <NavLink path='/#services'>Services</NavLink>
+            <NavLink path='/blog'>Blog</NavLink>
             {status == "authenticated" && <NavLink path='/admin'>DashBoard</NavLink>}
             {status == "authenticated" && <NavLink path='/api/auth/signout'>Logout</NavLink>}
 

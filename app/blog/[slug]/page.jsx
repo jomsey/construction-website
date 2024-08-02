@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import {FaArrowLeft,FaArrowRight, FaHeart, FaMessage} from 'react-icons/fa6'
+import CommentsPanel from '@/components/comments-pannel/comments-panel'
+import PostCommentForm from '@/components/post-comment-form/form'
 
 
 export default function PostDetails() {
@@ -39,7 +41,8 @@ export default function PostDetails() {
      <section className="flex justify-between">
        <div className="flex gap-6 w-max">
         
-        <div className="flex gap-6 items-center"><FaMessage className="text-gray-400 text-xl hover:text-green-500 duration-200 ease-linear"/> 
+        <div className="flex gap-6 items-center">
+        <CommentsPanel/> 
         <FaHeart className="text-gray-400 text-xl "/></div>
        </div>
        <div className="flex gap-6 w-max">
@@ -50,27 +53,59 @@ export default function PostDetails() {
 
       <section className="flex flex-col gap-8 mt-8 border-t"> 
         <h3 className="text-xl font-semibold mt-8">Leave a comment</h3>
-        <form action="" className="flex flex-col gap-6 w-1/2">
-          <textarea   className="w-full h-28 border rounded placeholder:text-sm p-3 "   placeholder="Comment"></textarea>
-           <div className="flex gap-6 w-full">
-             <input type="text" className="rounded placeholder:text-sm p-3 border"    placeholder="Your Name"/>
-             <input type="text" className="rounded placeholder:text-sm p-3 border"   placeholder="Your Email" />
-           </div>
-           <button type="submit" className="border w-max border-green-500 px-10 py-3 text-green-500">Submit</button>
-        </form>
+        <PostCommentForm/>
       </section>
      </main>
-         <aside>
+         <aside className="flex flex-col gap-8">
           <section className="bg-gray-200 p-6 rounded">
             <h4 className="text-gray-800 font-bold">Categories</h4>
             <ul className="flex flex-col gap-2">
-               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small>Survey</small></li>
-               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small>Technology</small></li>
-               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small>General</small></li>
-               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small>Management</small></li>
-               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small>Civil Engineering</small></li>
-               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small>Quality Assurance</small></li>
-               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small>Finance</small></li>
+               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small className="text-sm">Survey</small></li>
+               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small className="text-sm">Technology</small></li>
+               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small className="text-sm">General</small></li>
+               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small className="text-sm">Management</small></li>
+               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small className="text-sm">Civil Engineering</small></li>
+               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small className="text-sm">Quality Assurance</small></li>
+               <li className="text-gray-700 text-sm  border-gray-300 pb-2  border-b"><small className="text-sm">Finance</small></li>
+            </ul>
+          </section>
+          <section className="bg-gray-200 p-6 rounded">
+            <h4 className="text-gray-800 font-bold">Top sories</h4>
+            <ul className="flex flex-col gap-2">
+               <li className="text-gray-700 text-sm pb-2">
+                <div className="flex gap-4 items-center">
+                  <span className="text-2xl font-extrabold text-gray-700">1</span>
+                  <small className="text-sm text">The rise of the fallen</small>
+                </div>
+               </li>
+
+               <li className="text-gray-700 text-sm pb-2">
+                <div className="flex gap-4 items-center">
+                  <span className="text-2xl font-extrabold text-gray-700">2</span>
+                  <small className="text-sm text">The  start of the beginning</small>
+                </div>
+               </li>
+               <li className="text-gray-700 text-sm pb-2">
+                <div className="flex gap-4 items-center">
+                  <span className="text-2xl font-extrabold text-gray-700">3</span>
+                  <small className="text-sm text">Believing they can</small>
+                </div>
+               </li>
+              
+               <li className="text-gray-700 text-sm pb-2">
+                <div className="flex gap-4 items-center">
+                  <span className="text-2xl font-extrabold text-gray-700">4</span>
+                  <small className="text-sm text">The new construction era</small>
+                </div>
+               </li>
+               
+               <li className="text-gray-700 text-sm pb-2">
+                <div className="flex gap-4 items-center">
+                  <span className="text-2xl font-extrabold text-gray-700">5 .</span>
+                  <small className="text-sm text">Simply not me</small>
+                </div>
+               </li>
+              
             </ul>
           </section>
          </aside>
