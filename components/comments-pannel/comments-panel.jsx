@@ -12,7 +12,7 @@ export default function CommentsPanel() {
   return (
     <>
     <FaMessage className="text-gray-400 text-xl hover:text-green-500 duration-200 ease-linear" onClick={()=>setPanel(true)}/> 
-    <section className={`w-full ${panelVisible?"h-full sm:h-96 p-10":"h-0 p-0 invisible"} bg-white fixed bottom-0 left-0 z-50 p-10 overflow-hidden  duration-200 ease-linear`}>
+    <section className={`w-full ${panelVisible?"h-full sm:h-96 p-10":"h-0 p-0 "} bg-white fixed bottom-0 left-0 z-50  overflow-hidden  duration-200 ease-linear`}>
     <FaX className="absolute top-4 right-4 text-gray-500 text-xl cursor-pointer hover:text-green-500" onClick={()=>setPanel(false)}/>
     {/* <NoComments/> */}
     <section className=" flex flex-col sm:flex-row gap-6">

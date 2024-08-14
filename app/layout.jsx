@@ -23,6 +23,9 @@ const roboto = Roboto({
   variable: '--font-roboto'
 })
 
+export const viewport ={
+  themeColor:"#334155"
+}
 
 export default function RootLayout({ children }) {
   const path = usePathname()

@@ -1,3 +1,5 @@
+import Pagination from '@/components/pagination/Pagination'
+import PostCard from '@/components/post-card/post-card'
 import React from 'react'
 
 export const metadata = {
@@ -24,12 +26,20 @@ export const metadata = {
 
 }
 
-export const viewport ={
-  themeColor:"#334155"
-}
+
 export default function Blog() {
   
   return (
-    <div>Blog</div>
+    <>
+      <section className="grid md:grid-cols-2 max-xl:grid-cols-3 gap-8">
+        <PostCard/>
+        <PostCard/>
+        <PostCard/>
+        <PostCard/>
+        <PostCard/>
+        <PostCard/>
+      </section>
+      <Pagination maxPages={5} totalPages={30} className="mt-8 h-8"/>
+    </>
   )
 }
