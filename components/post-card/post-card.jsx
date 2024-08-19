@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function PostCard(){
     return(
         <Link href="/blog/sample">
-        <div className="w-full flex flex-col gap-2 overflow-hidden">
+        <div className="w-full flex flex-col gap-2 overflow-hidden ">
         <Image src='/cranes.jpg' width={400} height={200} className="object-cover w-full h-40 bg-gray-400" alt="..." priority={false}/>
        
         <small className="text-gray-400"> 12 January 2026</small>
