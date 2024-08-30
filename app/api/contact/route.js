@@ -1,5 +1,7 @@
+import prisma from "@/app/lib/prisma";
 import { NextResponse } from "next/server";
 import { z } from "zod"
+
 
 const schema = z.object({
     name: z.string(),
@@ -9,10 +11,28 @@ const schema = z.object({
 })
 
 export async function POST(request) {
-    const body = await request.json()
-    const validation = schema.safeParse(body)
+
+    const {name,phone,email,message} = await request.json()
+    const validation = schema.safeParse({name,phone,email,message})
+
     if (validation.success){
-        //save message to the database
-        return NextResponse.json({message:"Message sent successfully"},{status:201})}
+        try {
+             const data = await prisma.contact.create({data:{name,phone,email,message}})
+             return NextResponse.json(data,{status:201});
+
+        } catch (e) {
+
+        }}
     return NextResponse.json(validation.error.errors, {status: 400 })
+}
+
+
+
+export async function GET (request){
+    try {
+        const siteMessages = await prisma.contact.findMany()
+        return NextResponse.json(siteMessages)
+    } catch (error) {
+        
+    }
 }

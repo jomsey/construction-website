@@ -32,9 +32,8 @@ export default function PostDetails() {
     <p className="text-gray-600 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi illo tenetur quis? Exercitationem saepe accusamus laborum temporibus harum eius architecto iste eum, beatae soluta sunt qui nulla! Aliquid voluptate eveniet, distinctio beatae facilis, amet culpa possimus voluptatum, illo libero veniam.</p>
     </div>
      
-     <section className="flex justify-between">
+     <section className="flex flex-col md:flex-row gap-6 justify-between">
        <div className="flex gap-6 w-max">
-        
         <div className="flex gap-6 items-center">
         <CommentsPanel/> 
         <FaHeart className="text-gray-400 text-xl " role="button"/></div>

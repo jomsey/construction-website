@@ -31,15 +31,17 @@ export default function Blog() {
   
   return (
     <>
-      <section className="grid md:grid-cols-2 max-xl:grid-cols-3 gap-8">
+      <section className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
         <PostCard/>
         <PostCard/>
         <PostCard/>
         <PostCard/>
         <PostCard/>
+        <PostCard/>
+         <PostCard/>
         <PostCard/>
       </section>
-      <Pagination maxPages={5} totalPages={30} className="mt-8 h-8"/>
+      <Pagination maxPages={5} totalPages={30} className="mt-8 m-auto h-8"/>
     </>
   )
 }

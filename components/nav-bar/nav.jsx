@@ -22,7 +22,7 @@ export default function Nav() {
 
 
   return (
-    <nav className="flex justify-between items-center h-11  w-4/8 mt-6 z-10">
+    <nav className="flex justify-between items-center h-11  w-4/8 mt-6 z-16">
       <div className='bg-green-400 logo text-white flex  items-center flex-col gap-1 justify-center text-center z-40'>
         <span className='font-bold text-2xl'>Build</span>
         <span className='font-bold'>Africa</span>

@@ -7,12 +7,12 @@ function BlogLayout({children}) {
       <div className="bg-gray-300  mt-6 py-8 px-8 sm:px-24">
         <h1 className="text-gray-600 font-light text-xl">Blog</h1>
       </div>
-    <section className="grid grid-cols-4 gap-8 px-24 my-12">
-     <main className="col-span-3">
+    <section className="grid grid-cols-4 gap-8 px-12 md:px-24 my-12">
+     <main className="col-span-4 md:col-span-3">
      {children}
      </main>
-         <aside className="flex flex-col gap-8">
-          <section className="bg-gray-200 p-6 rounded">
+         <aside className="flex flex-col gap-8  overflow-hidden overflow-y-scroll md:w-full h-full z-10 md:px-0  pt-24 md:pt-0 md:overflow-auto w-0 fixed bg-white top-0 left-0 md:relative">
+          <section className="md:bg-gray-200 p-6 rounded">
             <h4 className="text-gray-800 font-bold">Categories</h4>
             <ul className="flex flex-col gap-2">
                <li className="text-gray-700 border-gray-300 pb-2  border-b"><small className="text-sm">Survey</small></li>
@@ -26,10 +26,10 @@ function BlogLayout({children}) {
           </section>
           <div>
             <form>
-                <input type="search" placeholder="search posts"/>
+                <input className="border rounded placeholder:text-sm placeholder:text-gray-500 w-full text-gray-500 focus p-2" type="search" placeholder="search posts"/>
             </form>
           </div>
-          <section className="bg-gray-200 p-6 rounded">
+          <section className="md:bg-gray-200 p-6 rounded">
             <h4 className="text-gray-800 font-bold">Top stories</h4>
             <ul className="flex flex-col gap-2">
                <li className="text-gray-700 text-sm pb-2">

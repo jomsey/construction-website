@@ -8,8 +8,56 @@ datasource db {
 }
 
 model User {
-  id       String @id @default(cuid())
-  name     String
-  email    String @unique
-  password String
+  id        String  @id @default(uuid())
+  firstName String?
+  lastName  String?
+  phone     String?
+  username  String  @unique
+  email     String  @unique
+  password  String
+}
+
+model PostComment {
+  id    Int    @id @default(autoincrement())
+  name  String
+  email String @unique
+  post  Post   @relation(fields: [id], references: [id])
+}
+
+model Post {
+  id        Int           @id @default(autoincrement())
+  createdAt DateTime      @default(now())
+  title     String
+  published Boolean       @default(false)
+  content   String
+  comments  PostComment[]
+  tags      PostTag[]
+}
+
+model PostTag {
+  id   Int    @id @default(autoincrement())
+  post Post   @relation(fields: [id], references: [id])
+  name String
+}
+
+model Contact {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  name      String
+  phone     String
+  message   String
+  email     String
+}
+
+model Subscription {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  email     String   @unique
+}
+
+model Event {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String
+  date        DateTime
 }
